@@ -35,9 +35,10 @@
 		top: 0%;
 		overflow: auto;
 
-		width: 40%;
-	
-		margin: 20px 30%;
+		width: 100%;
+		padding: 0 30%;
+
+		margin: 20px 0%;
 
 
 	}
