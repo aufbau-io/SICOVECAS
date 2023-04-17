@@ -25,8 +25,8 @@
 			videoElement.playbackRate = 0.3; 
 		}
 	
-		// const module = await import('$lib/components/three/cloth.svelte');
-		// Geometry = module.default;
+		const module = await import('$lib/components/three/cloth.svelte');
+		Geometry = module.default;
 
 		// ---------------------------------------------------------------------------
 		// HEIGHT
@@ -103,8 +103,9 @@
 		flex-direction: column;
 		height: 100%;
 		height: calc(var(--vh, 1vh) * 100);
-		overflow: hidden;
+
 	}
+
 
 	video {
 		position: absolute;
@@ -115,6 +116,8 @@
 		object-fit: cover;
 		z-index: -1;
 	}
+
+	
 
 	header {
 		position: absolute;
@@ -138,6 +141,7 @@
 		/* max-width: 64rem; */
 		margin: 0 auto;
 		box-sizing: border-box;
+
 	}
 
 	@media only screen and (max-width: 768px) {

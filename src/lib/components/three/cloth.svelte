@@ -73,7 +73,7 @@ const clothMesh = new THREE.Mesh(clothGeometry, clothMat);
 
 // outlineMesh.position.z = 1
 
-scene.add(clothMesh);
+// scene.add(clothMesh);
 
 
 
@@ -134,7 +134,7 @@ const sphereMat = new THREE.MeshPhysicalMaterial({
 
 const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMat);
 sphereMesh.position.z = 1
-scene.add(sphereMesh);
+// scene.add(sphereMesh);
 
 const sphereShape = new CANNON.Sphere(sphereSize * 1);
 let sphereBody = new CANNON.Body({
@@ -203,5 +203,7 @@ window.addEventListener("mousemove", (event) => {
 		top: 0;
 		left: 0;
 		overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
 	}
 </style>

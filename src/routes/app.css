@@ -3,7 +3,7 @@
 :root {
 	--font-body: nb-television, sans-serif;
 	--font-header: sirap, sans-serif;
-	--background: linear-gradient(115deg, #f0f0f0, #ffddddfa, #f0f0f0);
+	--background: linear-gradient(115deg, #ffddddf0, #f0f0f0, #ffddddf0);
 	--primary: #232323;
 	--primary-50: #d0d0d080;
 	--column-width: 42rem;

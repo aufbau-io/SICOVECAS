@@ -8,20 +8,38 @@
 
 <section>
 
+	<p>some name - 2022</p>
+	<img src="main.jpg" alt="main" />
+	<p>some name - 2022</p>
+	<img src="main.jpg" alt="main" />
+	<p>some name - 2022</p>
+	<img src="main.jpg" alt="main" />
+	<p>some name - 2022</p>
+	<img src="main.jpg" alt="main" />
+	<p>some name - 2022</p>
+	<img src="main.jpg" alt="main" />
 </section>
 
 <style>
 	section {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
+
 		flex: 1;
+		gap: 10px;
 		/* background: var(--background); */
 
-		max-width: 100%;
-		max-height: 100%;
-		overflow: hidden;
+	
+		left: 10%;
+		top: 0%;
+		overflow: auto;
+
+		width: 40%;
+	
+		margin: 20px 30%;
+
+
 	}
 
 	h1 {
