@@ -73,7 +73,7 @@ const clothMesh = new THREE.Mesh(clothGeometry, clothMat);
 
 // outlineMesh.position.z = 1
 
-// scene.add(clothMesh);
+scene.add(clothMesh);
 
 
 
@@ -115,7 +115,7 @@ const particlesMaterialLight = new THREE.PointsMaterial({
 
 // Points
 const stars = new THREE.Points(particlesGeometry, null);
-// scene.add(stars);
+scene.add(stars);
 
 $: stars.material = $darkMode ? particlesMaterialLight : particlesMaterialDark;
 
@@ -134,7 +134,7 @@ const sphereMat = new THREE.MeshPhysicalMaterial({
 
 const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMat);
 sphereMesh.position.z = 1
-// scene.add(sphereMesh);
+scene.add(sphereMesh);
 
 const sphereShape = new CANNON.Sphere(sphereSize * 1);
 let sphereBody = new CANNON.Body({

@@ -25,8 +25,8 @@
 			videoElement.playbackRate = 0.3; 
 		}
 	
-		const module = await import('$lib/components/three/cloth.svelte');
-		Geometry = module.default;
+		// const module = await import('$lib/components/three/cloth.svelte');
+		// Geometry = module.default;
 
 		// ---------------------------------------------------------------------------
 		// HEIGHT
@@ -64,7 +64,7 @@
 	});
 </script>
 
-<svelte:component this={Geometry} />
+<!-- <svelte:component this={Geometry} /> -->
 
 
 <div class="app">
