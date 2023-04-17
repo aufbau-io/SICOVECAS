@@ -151,8 +151,8 @@ function animate(time) {
 
   const elapsedTime = clock.getElapsedTime();
 
-  camera.position.x += (cursor.x - camera.position.x * 1) * .01;
-	camera.position.y += (-cursor.y - camera.position.y * 1) * .02;
+  camera.position.x += (cursor.x - camera.position.x * 1) * .015;
+	camera.position.y += (-cursor.y - camera.position.y * 1) * .025;
 
 	camera.lookAt(scene.position);
 
