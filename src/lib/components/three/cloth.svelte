@@ -20,7 +20,7 @@ renderer.setClearColor(0x171717, 0);
 const scene = new THREE.Scene();
 
 //ADD FOG
-// scene.fog = new THREE.FogExp2(0x232323, .1, 10);
+scene.fog = new THREE.FogExp2(0x232323, 1, 10);
 
 onMount(() => {
 		container.appendChild(renderer.domElement);
@@ -48,10 +48,6 @@ camera.lookAt(0, 0, 0);
 //   scene.fog = new THREE.FogExp2(color, density);
 // }
 
-const world = new CANNON.World({
-    gravity: new CANNON.Vec3(0, -9.8, 0)
-});
-
 
 const clothGeometry = new THREE.PlaneGeometry(1, 1, 1, 1);
 const clothMat = new THREE.MeshBasicMaterial({
@@ -73,7 +69,7 @@ const clothMesh = new THREE.Mesh(clothGeometry, clothMat);
 
 // outlineMesh.position.z = 1
 
-// scene.add(clothMesh);
+scene.add(clothMesh);
 
 
 
@@ -115,7 +111,7 @@ const particlesMaterialLight = new THREE.PointsMaterial({
 
 // Points
 const stars = new THREE.Points(particlesGeometry, null);
-scene.add(stars);
+// scene.add(stars);
 
 $: stars.material = $darkMode ? particlesMaterialLight : particlesMaterialDark;
 
@@ -130,11 +126,12 @@ const sphereMat = new THREE.MeshPhysicalMaterial({
   roughness: 0,  
   transmission: 1,  
   thickness: 0.5, // Add refraction!
+
 });
 
 const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMat);
 sphereMesh.position.z = 1
-// scene.add(sphereMesh);
+scene.add(sphereMesh);
 
 const sphereShape = new CANNON.Sphere(sphereSize * 1);
 let sphereBody = new CANNON.Body({
@@ -203,7 +200,7 @@ window.addEventListener("mousemove", (event) => {
 		top: 0;
 		left: 0;
 		overflow: hidden;
-    z-index: 1;
+    z-index: -1;
     pointer-events: none;
 	}
 </style>
