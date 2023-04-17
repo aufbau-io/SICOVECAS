@@ -1,6 +1,10 @@
 <script>
 	import Nav from './nav.svelte';
 	import { darkMode } from '$lib/store/store';
+
+	import { page } from '$app/stores';
+	import { goto } from '$app/navigation';
+
 	// stub data out
 	const navItems = [
 		{
@@ -30,6 +34,10 @@
 	let toggleDarkMode = () => {
 		darkMode.set(!$darkMode);
 		document.querySelector(':root').classList.toggle('dark-mode');
+
+		if ($page.url.pathname == '/') {
+goto(`/art`, { replaceState: true }) 
+		}
 	};
 </script>
 

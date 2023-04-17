@@ -1,4 +1,13 @@
 <script>
+	import { onMount } from 'svelte';
+	import { darkMode } from '$lib/store/store';
+
+	onMount(async () => {
+		if (!$darkMode) {
+			darkMode.set(!$darkMode);
+		document.querySelector(':root').classList.toggle('dark-mode');
+		}
+	});
 </script>
 
 <svelte:head>
@@ -8,16 +17,8 @@
 
 <section>
 
-	<!-- <p>some name - 2022</p>
-	<img src="main.jpg" alt="main" />
-	<p>some name - 2022</p>
-	<img src="main.jpg" alt="main" />
-	<p>some name - 2022</p>
-	<img src="main.jpg" alt="main" />
-	<p>some name - 2022</p>
-	<img src="main.jpg" alt="main" />
-	<p>some name - 2022</p>
-	<img src="main.jpg" alt="main" /> -->
+	<!-- <h1>SICOVECAS</h1> -->
+
 </section>
 
 <style>
@@ -44,15 +45,14 @@
 	}
 
 	h1 {
-		width: 100%;
-		color: transparent;
-		font-family: var(--font-header);
-		font-size: 33vw;
+	
+		color: var(--primary);
+		font-family: var(--font-body);
+		font-size: 12vw;
 		line-height: 50%;
-		margin: auto;
-		padding-left: 1.5vw;
-		padding-top: 15vh;
-		-webkit-text-stroke: 1px #d0d0d0;
+		margin: auto 0;
+		/* -webkit-text-stroke: 3px var(--primary); */
+
 	}
 
 @media (max-width: 768px) {
