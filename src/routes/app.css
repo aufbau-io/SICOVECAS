@@ -1,0 +1,152 @@
+@tailwind base;
+
+:root {
+	--font-body: nb-television, sans-serif;
+	--font-header: sirap, sans-serif;
+	--background: linear-gradient(115deg, #f0f0f0, #ffddddfa, #f0f0f0);
+	--primary: #232323;
+	--primary-50: #d0d0d080;
+	--column-width: 42rem;
+	--margin: 20px;
+	font-family: var(--font-body);
+	color: var(--color-text);
+	user-select: none;
+}
+
+:root.dark-mode {
+	--background: none;
+	--primary: #f0f0f0;
+	--primary-50: #eecccc80;
+}
+
+@font-face {
+	font-family: sirap;
+	src: url(/fonts/sirap.woff) format('woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: nb-television;
+	src: url(/fonts/NB-Television-Pro-Mono.woff) format('woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: family;
+	src: url(/fonts/test-family-ligh.woff2) format('woff2');
+	font-weight: 400;
+}
+
+html {
+	background: #232323;
+}
+
+body {
+	min-height: 100vh;
+	font-family: var(--font-body);
+	margin: 0;
+	background-attachment: fixed;
+	background: var(--background);
+	background-size: 100vw 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+	color: var(--primary);
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+pre {
+	font-size: 16px;
+	font-family: var(--font-mono);
+	background-color: rgba(255, 255, 255, 0.45);
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: var(--color-text);
+}
+
+.text-column {
+	display: flex;
+	max-width: 48rem;
+	flex: 0.6;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+/* scrollbar width */
+::-webkit-scrollbar {
+	width: 0px !important;
+	height: 0px !important;
+}
+
+/* scrollbar Track */
+::-webkit-scrollbar-track {
+	background: transparent !important;
+}
+
+/* scrollbar Handle */
+::-webkit-scrollbar-thumb {
+	background: #1b1c1d !important;
+	border-radius: 0;
+}
+
+@media (max-width: 768px) {
+	:root {
+		--margin: 10px;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
