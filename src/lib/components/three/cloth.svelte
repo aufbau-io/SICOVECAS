@@ -13,7 +13,7 @@ let sizes = {
   height: window.innerHeight,
 };
 
-const renderer = new THREE.WebGLRenderer({antialias: false});
+const renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setSize(sizes.width, sizes.height);
 renderer.setClearColor(0x171717, 0);
 
