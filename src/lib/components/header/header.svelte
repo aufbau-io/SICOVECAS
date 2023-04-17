@@ -9,20 +9,20 @@
 		},
 		{
 			name: 'ART',
-			href: '/'
+			href: '/art'
 		},
 		{
 			name: 'WALL',
-			href: '/'
+			href: '/art'
 		},
 	
 		{
 			name: 'SHOP',
-			href: '/'
+			href: '/art'
 		},
 		{
 			name: 'CONTACT',
-			href: '/'
+			href: '/art'
 		},
 
 	];

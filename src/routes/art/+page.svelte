@@ -8,8 +8,6 @@
 
 <section>
 
-	<!-- <p>some name - 2022</p>
-	<img src="main.jpg" alt="main" />
 	<p>some name - 2022</p>
 	<img src="main.jpg" alt="main" />
 	<p>some name - 2022</p>
@@ -17,7 +15,9 @@
 	<p>some name - 2022</p>
 	<img src="main.jpg" alt="main" />
 	<p>some name - 2022</p>
-	<img src="main.jpg" alt="main" /> -->
+	<img src="main.jpg" alt="main" />
+	<p>some name - 2022</p>
+	<img src="main.jpg" alt="main" />
 </section>
 
 <style>
