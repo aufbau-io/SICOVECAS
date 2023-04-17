@@ -20,7 +20,7 @@ renderer.setClearColor(0x171717, 0);
 const scene = new THREE.Scene();
 
 //ADD FOG
-scene.fog = new THREE.FogExp2(0x232323, .1, 10);
+// scene.fog = new THREE.FogExp2(0x232323, .1, 10);
 
 onMount(() => {
 		container.appendChild(renderer.domElement);
