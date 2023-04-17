@@ -3,7 +3,7 @@
 
 <svelte:head>
 	<title>SICOVECAS</title>
-	<meta name="description" content="SCRT THROW DEMO - AUFBAU IO" />
+	<meta name="description" content="SICOVECAS DEMO - AUFBAU IO" />
 </svelte:head>
 
 <section>
