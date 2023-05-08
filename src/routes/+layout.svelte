@@ -84,9 +84,9 @@
 	{/if}
 
 	<!-- svelte-ignore a11y-media-has-caption -->
-	<video bind:this={videoElement} width="100%" autoplay muted loop class="video1">
+	<!-- <video bind:this={videoElement} width="100%" autoplay muted loop class="video1">
 		<source src="bg.mp4" type="video/mp4">
-	</video>
+	</video> -->
 
 		<!-- svelte-ignore a11y-media-has-caption -->
 		<video bind:this={videoElement2} width="100%" autoplay muted loop class="video2">
