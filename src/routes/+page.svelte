@@ -15,17 +15,18 @@
 	<meta name="description" content="SICOVECAS DEMO - AUFBAU IO" />
 </svelte:head>
 
+
 <section>
-
-	<!-- <h1>SICOVECAS</h1> -->
-
+	<img src="logo_white.png" alt="main" class="logo" />
+	<img src="obi.jpg" alt="main" class="obi" />
 </section>
 
 <style>
 	section {
 		display: flex;
-		flex-direction: column;
+		flex-flow: row wrap;
 		align-items: center;
+		justify-content: center;
 
 		flex: 1;
 		gap: 10px;
@@ -42,6 +43,19 @@
 		margin: 20px 0%;
 
 
+	}
+
+	.obi {
+		width: 80%;
+		border: double var(--orange) 2px;
+	}
+
+	.logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 50%;
 	}
 
 	h1 {

@@ -13,20 +13,20 @@
 		},
 		{
 			name: 'ART',
-			href: '/art'
+			href: '/'
 		},
 		{
 			name: 'WALL',
-			href: '/art'
+			href: '/'
 		},
 	
 		{
 			name: 'SHOP',
-			href: '/art'
+			href: '/'
 		},
 		{
 			name: 'CONTACT',
-			href: '/art'
+			href: '/'
 		},
 
 	];
@@ -59,8 +59,8 @@
 	header {
 		user-select: none;
 		color: var(--primary);
-		/* border-bottom: solid 1px var(--primary-50);
-		background: var(--background);
+		/* border-bottom: double var(--background) 2px;
+		background: var(--orange);
 		box-shadow: 0px -1px 8px var(--orimary-50); */
 	}
 

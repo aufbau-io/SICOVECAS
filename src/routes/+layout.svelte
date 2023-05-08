@@ -7,13 +7,16 @@
 	import Header from '$lib/components/header/header.svelte';
 	import Footer from '$lib/components/footer/footer.svelte';
 
-	let videoElement;
+	let videoElement, videoElement2;
 
 
 	
 	beforeUpdate(() => {
 		if (videoElement) {
 			videoElement.playbackRate = 0.3; 
+		}
+		if (videoElement2) {
+			videoElement2.playbackRate = 1; 
 		}
 });
 
@@ -23,6 +26,10 @@
 
 		if (videoElement) {
 			videoElement.playbackRate = 0.3; 
+		}
+
+		if (videoElement2) {
+			videoElement2.playbackRate = .1; 
 		}
 	
 		const module = await import('$lib/components/three/cloth.svelte');
@@ -77,11 +84,17 @@
 	{/if}
 
 	<!-- svelte-ignore a11y-media-has-caption -->
-	<video bind:this={videoElement} width="100%" autoplay muted loop>
+	<video bind:this={videoElement} width="100%" autoplay muted loop class="video1">
 		<source src="bg.mp4" type="video/mp4">
-		<!-- <source src="bg.ogg" type="video/ogg"> -->
-
 	</video>
+
+		<!-- svelte-ignore a11y-media-has-caption -->
+		<video bind:this={videoElement2} width="100%" autoplay muted loop class="video2">
+			<source src="bg2.mp4" type="video/mp4">
+			<!-- <source src="bg.ogg" type="video/ogg"> -->
+		</video>
+	
+		
 
 	<main>
 		<slot />
@@ -109,14 +122,35 @@
 
 	video {
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
 		object-fit: cover;
+
 		z-index: -1;
 	}
 
+	/* main {
+		z-index: 10;
+	}
+	header, footer {
+		z-index: 11;
+	} */
+
+	.video1 {
+		height: 50%;
+		width: 100%;
+		opacity: .75;
+
+		top: 50%;
+		left: 0%;
+	}
+
+	.video2 {
+		height: 50%;
+		width: 100%;
+		opacity: .75;
+
+		left: 0%;
+		left: 0;
+	}
 	
 
 	header {
