@@ -29,7 +29,7 @@
 		}
 
 		if (videoElement2) {
-			videoElement2.playbackRate = .1; 
+			videoElement2.playbackRate = 1; 
 		}
 	
 		const module = await import('$lib/components/three/cloth.svelte');
