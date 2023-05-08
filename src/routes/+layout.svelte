@@ -146,7 +146,7 @@
 	.video2 {
 		height: 50%;
 		width: 100%;
-		opacity: .75;
+		opacity: .8;
 
 		left: 0%;
 		left: 0;
