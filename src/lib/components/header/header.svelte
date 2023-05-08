@@ -48,9 +48,9 @@
 
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<div on:click={() => toggleDarkMode()} class="darkMode right">
-		<p class:selected={$darkMode == true}>DRIVE</p>
+		<p class:selected={$darkMode == true}>PLAY</p>
 		<p class="selected">/</p>
-		<p class:selected={$darkMode == false}>BREATHE</p>
+		<p class:selected={$darkMode == false}>PAUSE</p>
 	</div>
 </main>
 </header>
