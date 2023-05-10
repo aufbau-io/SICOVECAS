@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { screenType } from '$lib/store/store';
 	import * as THREE from 'three';
 	let group;
 
@@ -38,13 +39,15 @@
 
 		// -------------------------------------------------------------------------
 
+		let numSegments = $screenType == 3 ? 960 : 480; 
+
 		sphere = new THREE.Mesh(
-			new THREE.SphereGeometry(150, 960),
+			new THREE.SphereGeometry(150, numSegments),
 			new THREE.MeshBasicMaterial({ color: 0x880808, wireframe: true })
 		);
 
 		sphere_2 = new THREE.Mesh(
-			new THREE.SphereGeometry(150, 960),
+			new THREE.SphereGeometry(150, numSegments),
 			new THREE.MeshBasicMaterial({ color: 0xf0f0f0, wireframe: true })
 		);
 
