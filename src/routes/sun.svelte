@@ -40,12 +40,12 @@
 		// -------------------------------------------------------------------------
 
 		sphere = new THREE.Mesh(
-			new THREE.SphereGeometry(150, 480),
-			new THREE.MeshBasicMaterial({ color: 0xf0f0f0, wireframe: true })
+			new THREE.SphereGeometry(150, 960),
+			new THREE.MeshBasicMaterial({ color: 0x880808, wireframe: true })
 		);
 
 		sphere_2 = new THREE.Mesh(
-			new THREE.SphereGeometry(150, 480),
+			new THREE.SphereGeometry(150, 960),
 			new THREE.MeshBasicMaterial({ color: 0xf0f0f0, wireframe: true })
 		);
 
@@ -103,7 +103,8 @@
 		const deltaTime = elapsedTime - previousTime;
 		previousTime = elapsedTime;
 
-		scene.rotation.z = Math.sin(elapsedTime / 1000);
+		sphere.rotation.z += Math.sin(elapsedTime / 4000000000);
+		sphere_2.rotation.x += Math.sin(elapsedTime / 4000000000);
 		// scene.rotation.y = mouseX / 10000 + scene.rotation.y;
 
 		// scene.rotation.x = mouseX / 10000 + scene.rotation.x;
