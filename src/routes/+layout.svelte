@@ -100,6 +100,12 @@
 		width: 100%;
 	}
 
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
 
 	video {
 		position: absolute;

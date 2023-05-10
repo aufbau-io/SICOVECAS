@@ -32,10 +32,13 @@
 		overflow: auto;
 
 		width: 100%;
-		padding: 0 30%;
 
 		margin: 20px 0;
 
+	}
+
+	section img {
+		width: 600px;
 	}
 
 	p {
