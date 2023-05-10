@@ -105,8 +105,8 @@
 		const deltaTime = elapsedTime - previousTime;
 		previousTime = elapsedTime;
 
-		sphere.rotation.z += Math.tan(deltaTime / 10000000) * factor;
-		sphere_2.rotation.x += Math.tan(deltaTime  / 10000000) * factor;
+		sphere.rotation.z += Math.tan(deltaTime / 20000000) * factor;
+		sphere_2.rotation.x += Math.tan(deltaTime  / 20000000) * factor;
 
 		if (sphere.rotation.z > 0.000005) {
 			factor = -1;
