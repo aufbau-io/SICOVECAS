@@ -22,6 +22,8 @@
 	let windowHalfY = height / 2;
 
 	const clock = new THREE.Clock();
+	let previousTime = 0;
+	let elapsedTime = 0;
 
 	init();
 	animate();
@@ -100,11 +102,11 @@
 
 	function render() {
 		const elapsedTime = clock.getElapsedTime();
-		// const deltaTime = elapsedTime - previousTime;
-		// previousTime = elapsedTime;
+		const deltaTime = elapsedTime - previousTime;
+		previousTime = elapsedTime;
 
-		sphere.rotation.z += Math.sin(elapsedTime / 10000000000) * factor;
-		sphere_2.rotation.x += Math.sin(elapsedTime / 10000000000) * factor;
+		sphere.rotation.z += Math.tan(deltaTime / 10000000) * factor;
+		sphere_2.rotation.x += Math.tan(deltaTime  / 10000000) * factor;
 
 		if (sphere.rotation.z > 0.000005) {
 			factor = -1;
