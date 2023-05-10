@@ -61,7 +61,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 20%;
+		width: 720px;
 
 		border: none;
 	}
@@ -79,7 +79,7 @@
 
 @media (max-width: 768px) {
 .logo {
-	min-width: 50vw;
+	width: 90vw;
 }
 }
 

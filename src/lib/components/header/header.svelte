@@ -73,7 +73,7 @@
 		max-width: 100vw;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
 
 		padding: 10px 10px;
 		font-size: 13px;
@@ -87,6 +87,7 @@
 		background: var(--background);
 		display: flex;
 		padding: 4px 10px;
+
 	}
 
 	.darkMode {
