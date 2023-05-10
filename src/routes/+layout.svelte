@@ -1,7 +1,7 @@
 <script>
 	import './app.css';
 
-	import { onMount, beforeUpdate } from 'svelte';
+	import { onMount } from 'svelte';
 	import { screenType, is_iframe } from '$lib/store/store';
 
 	import Header from '$lib/components/header/header.svelte';
@@ -55,22 +55,9 @@
 <div class="app">
 	{#if $screenType}
 
-	{#if true || $screenType == 3}
 	<header>
 		<Header />
 	</header>
-	{/if}
-
-	<!-- svelte-ignore a11y-media-has-caption -->
-	<!-- <video bind:this={videoElement} width="100%" autoplay muted loop class="video1">
-		<source src="bg.mp4" type="video/mp4">
-	</video> -->
-
-		<!-- svelte-ignore a11y-media-has-caption -->
-		<!-- <video bind:this={videoElement} width="100%" autoplay muted loop class="video2">
-			<source src="bg.mp4" type="video/mp4">
-		</video> -->
-		
 
 	<main>
 		<slot />
@@ -120,37 +107,6 @@
 	header, footer {
 		z-index: 11;
 	}
-
-	.video1 {
-		height: 50%;
-		width: 100%;
-		opacity: .75;
-
-		top: 50%;
-		left: 0%;
-	}
-
-	.video2 {
-		height: 100%;
-		width: 100%;
-		opacity: .75;
-
-		top: 0%;
-		left: 0;
-	}
-	
-/* 
-	header {
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-
-	footer {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-	} */
 
 	main {
 		flex: 1;
