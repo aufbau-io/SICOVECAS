@@ -1,6 +1,6 @@
 <script>
 	import Nav from './nav.svelte';
-	import { darkMode } from '$lib/store/store';
+	import { darkMode, screenType } from '$lib/store/store';
 
 	// import { page } from '$app/stores';
 	// import { goto } from '$app/navigation';
@@ -53,7 +53,9 @@
 		<p class:selected={$darkMode == true}>NIGHT</p>
 	</div> -->
 
+	{#if $screenType == 3}
 	<p class="sun">SICOVECAS : SUN OF THE SUN</p>
+	{/if}
 </main>
 </header>
 

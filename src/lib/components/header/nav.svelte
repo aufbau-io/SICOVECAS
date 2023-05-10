@@ -14,13 +14,11 @@
 
 <nav>
 
-	{#if $screenType == 3}
 	{#each navItems as navItem}
 		<a href={navItem.href} class="" class:active={navItem.href === $page.url.pathname}
 			>{navItem.name}</a
 		>
 	{/each}
-	{/if}
 
 	<!-- <a href="https://aufbau.io" target="_blank">EIN AUFBAU DING</a> -->
 </nav>

@@ -19,7 +19,6 @@
 <section>
 	<img src="obi.jpg" alt="main" class="obi" />
 	<img src="logo.svg" alt="main" class="logo" />
-
 </section>
 
 <style>
@@ -62,7 +61,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 48%;
+		width: 20%;
 
 		border: none;
 	}
@@ -79,14 +78,9 @@
 	}
 
 @media (max-width: 768px) {
-	h1 {
-		opacity: 0;
-		height:0;
-	}
-
-	section {
-		max-height: 0;
-	}
+.logo {
+	min-width: 50vw;
+}
 }
 
 </style>

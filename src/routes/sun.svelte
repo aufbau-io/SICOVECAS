@@ -106,16 +106,12 @@
 		const deltaTime = elapsedTime - previousTime;
 		previousTime = elapsedTime;
 
-		sphere.rotation.z += Math.tan(elapsedTime / 4000000000) * factor;
-		sphere_2.rotation.x += Math.tan(elapsedTime / 4000000000) * factor;
+		sphere.rotation.z += Math.sin(elapsedTime / 4000000000) * factor;
+		sphere_2.rotation.x += Math.sin(elapsedTime / 4000000000) * factor;
 
 		if (sphere.rotation.z > 0.000005) {
-			sphere.rotation.z = 0.000005;
-			sphere_2.rotation.z = 0.000005;
 			factor = -1;
-		} else if (sphere.rotation.z < -0.000005) {
-			sphere.rotation.z = -0.000005;
-			sphere_2.rotation.z = -0.000005;
+		} else if (sphere.rotation.z < - 0.000005) {
 			factor = 1;
 		}
 		// scene.rotation.y = mouseX / 10000 + scene.rotation.y;

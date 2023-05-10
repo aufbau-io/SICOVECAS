@@ -58,13 +58,9 @@
 	}
 
 @media (max-width: 768px) {
-	h1 {
-		opacity: 0;
-		height:0;
-	}
-
 	section {
-		max-height: 0;
+		padding: 0 24px;
+		align-items: flex-end;
 	}
 }
 

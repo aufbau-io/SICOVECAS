@@ -55,7 +55,7 @@
 <div class="app">
 	{#if $screenType}
 
-	{#if $screenType == 3}
+	{#if true || $screenType == 3}
 	<header>
 		<Header />
 	</header>
@@ -76,7 +76,7 @@
 		<slot />
 	</main>
 
-	{#if $screenType == 3}
+	{#if true || $screenType == 3}
 	<footer>
 		<Footer />
 	</footer>
