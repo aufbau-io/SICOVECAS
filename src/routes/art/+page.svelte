@@ -34,7 +34,8 @@
 
 		width: 100%;
 
-		margin: 20px 0;
+		margin: 10px 0;
+		padding: 10px 0;
 
 	}
 
@@ -60,7 +61,7 @@
 
 @media (max-width: 768px) {
 	section {
-		padding: 0 20px;
+		padding: 10px 20px 20px 20px;
 		align-items: flex-end;
 		margin-bottom: 0;
 	}
