@@ -1,4 +1,5 @@
 <script>
+	let img_src = "src/lib/assets/main.jpg" 
 </script>
 
 <svelte:head>
@@ -8,15 +9,15 @@
 
 <section>
 	<p>some name - 2022</p>
-	<img src="main.jpg" alt="main" />
+	<img src={img_src} alt="main" />
 	<p>some name - 2022</p>
-	<img src="main.jpg" alt="main" />
+	<img src={img_src} alt="main" />
 	<p>some name - 2022</p>
-	<img src="main.jpg" alt="main" />
+	<img src={img_src} alt="main" />
 	<p>some name - 2022</p>
-	<img src="main.jpg" alt="main" />
+	<img src={img_src} alt="main" />
 	<p>some name - 2022</p>
-	<img src="main.jpg" alt="main" />
+	<img src={img_src} alt="main" />
 </section>
 
 <style>
