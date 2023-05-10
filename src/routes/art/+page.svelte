@@ -2,7 +2,7 @@
 </script>
 
 <svelte:head>
-	<title>SICOVECAS</title>
+	<title>SICOVECAS // ART</title>
 	<meta name="description" content="SICOVECAS DEMO - AUFBAU IO" />
 </svelte:head>
 
