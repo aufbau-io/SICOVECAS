@@ -76,7 +76,7 @@
 		<slot />
 	</main>
 
-	{#if true || $screenType == 3}
+	{#if $screenType == 3}
 	<footer>
 		<Footer />
 	</footer>
