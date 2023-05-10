@@ -58,6 +58,7 @@
 	section {
 		padding: 0 20px;
 		align-items: flex-end;
+		margin-bottom: 0;
 	}
 }
 
