@@ -1,5 +1,6 @@
 <script>
 	import Nav from './nav.svelte';
+	import { page } from '$app/stores';
 	import { darkMode, screenType } from '$lib/store/store';
 
 	// import { page } from '$app/stores';
@@ -53,7 +54,7 @@
 		<p class:selected={$darkMode == true}>NIGHT</p>
 	</div> -->
 
-	{#if $screenType == 3}
+	{#if $page.url.pathname == '/'}
 	<p class="sun">SICOVECAS : SUN OF THE SUN</p>
 	{/if}
 </main>
