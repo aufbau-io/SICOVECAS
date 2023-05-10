@@ -85,9 +85,8 @@
 
 	.sun {
 		background: var(--background);
-		display: flex;
 		padding: 4px 10px;
-
+		padding-top: 6px;
 	}
 
 	.darkMode {

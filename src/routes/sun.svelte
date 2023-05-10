@@ -21,9 +21,6 @@
 	let windowHalfY = height / 2;
 
 	const clock = new THREE.Clock();
-	let previousTime,
-		elapsedTime,
-		deltaTime = 0;
 
 	init();
 	animate();
@@ -62,7 +59,7 @@
 
 		// -------------------------------------------------------------------------
 
-		renderer = new THREE.WebGLRenderer({ antialias: true });
+		renderer = new THREE.WebGLRenderer({ antialias: false });
 		renderer.setPixelRatio(window.devicePixelRatio);
 		renderer.setSize(width, height);
 
@@ -70,10 +67,7 @@
 			container.appendChild(renderer.domElement);
 		});
 
-		document.addEventListener('mousemove', onDocumentMouseMove);
-
-		//
-
+		// document.addEventListener('mousemove', onDocumentMouseMove);
 		window.addEventListener('resize', onWindowResize);
 	}
 
@@ -90,10 +84,10 @@
 		renderer.setSize(width, height);
 	}
 
-	function onDocumentMouseMove(event) {
-		mouseX = event.clientX;
-		mouseY = event.clientY;
-	}
+	// function onDocumentMouseMove(event) {
+	// 	mouseX = event.clientX;
+	// 	mouseY = event.clientY;
+	// }
 
 	function animate() {
 		requestAnimationFrame(animate);
@@ -103,8 +97,8 @@
 
 	function render() {
 		const elapsedTime = clock.getElapsedTime();
-		const deltaTime = elapsedTime - previousTime;
-		previousTime = elapsedTime;
+		// const deltaTime = elapsedTime - previousTime;
+		// previousTime = elapsedTime;
 
 		sphere.rotation.z += Math.sin(elapsedTime / 4000000000) * factor;
 		sphere_2.rotation.x += Math.sin(elapsedTime / 4000000000) * factor;
@@ -114,12 +108,8 @@
 		} else if (sphere.rotation.z < - 0.000005) {
 			factor = 1;
 		}
-		// scene.rotation.y = mouseX / 10000 + scene.rotation.y;
 
-		// scene.rotation.x = mouseX / 10000 + scene.rotation.x;
-
-		camera.lookAt(scene.position);
-
+		// camera.lookAt(scene.position);
 		renderer.render(scene, camera);
 	}
 </script>
@@ -130,6 +120,6 @@
 	.geometry {
 		position: absolute;
 		overflow: hidden;
-		opacity: 0.9;
+		opacity: .75;
 	}
 </style>
