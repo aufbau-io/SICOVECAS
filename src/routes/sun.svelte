@@ -40,12 +40,12 @@
 		// -------------------------------------------------------------------------
 
 		sphere = new THREE.Mesh(
-			new THREE.SphereGeometry(170, 480),
+			new THREE.SphereGeometry(150, 480),
 			new THREE.MeshBasicMaterial({ color: 0xf0f0f0, wireframe: true })
 		);
 
 		sphere_2 = new THREE.Mesh(
-			new THREE.SphereGeometry(170, 480),
+			new THREE.SphereGeometry(150, 480),
 			new THREE.MeshBasicMaterial({ color: 0xf0f0f0, wireframe: true })
 		);
 
