@@ -63,6 +63,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 48%;
+
 		border: none;
 	}
 
@@ -79,6 +80,9 @@
 
 @media (max-width: 768px) {
 
+	.logo {
+		width: 90%;
+	}
 	h1 {
 		opacity: 0;
 		height:0;
