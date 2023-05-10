@@ -59,7 +59,7 @@
 
 @media (max-width: 768px) {
 	section {
-		padding: 0 24px;
+		padding: 0 20px;
 		align-items: flex-end;
 	}
 }
