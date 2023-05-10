@@ -52,8 +52,8 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 
-		min-width: 480px;
-		max-width: 480px;
+		width: 480px;
+		max-width: 70%;
 		border: double var(--background) 5px;
 	}
 
@@ -78,6 +78,7 @@
 	}
 
 @media (max-width: 768px) {
+
 	h1 {
 		opacity: 0;
 		height:0;
