@@ -6,21 +6,21 @@
 	--column-width: 42rem;
 	--margin: 20px;
 	font-family: var(--font-body);
-	color: var(--color-text);
 	user-select: none;
 
 	--orange: #daaa55;
-}
-
-:root.dark-mode {
-	--background: #daaa55;
-	--primary: #232323;
-	--primary-50: #d0d0d080;
+	--black: #232323;
 }
 
 :root {
 	--background: #232323;
-	--primary: #f0f0f0;
+	--primary: #daaa55;
+	--primary-50: #d0d0d080;
+}
+
+:root.dark-mode {
+	--background: #232323;
+	--primary: #daaa55;
 	--primary-50: #eecccc80;
 }
 
@@ -43,16 +43,17 @@
 }
 
 html {
-	background: #232323;
+	background: #daaa55;
 }
 
 body {
 	min-height: 100vh;
 	font-family: var(--font-body);
 	margin: 0;
-	background-attachment: fixed;
-	background: var(--background);
-	background-size: 100vw 100vh;
+}
+
+img {
+	border: double var(--background) 5px;
 }
 
 h1,

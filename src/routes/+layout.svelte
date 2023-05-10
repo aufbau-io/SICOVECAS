@@ -7,33 +7,10 @@
 	import Header from '$lib/components/header/header.svelte';
 	import Footer from '$lib/components/footer/footer.svelte';
 
-	// let videoElement, videoElement2;
-	let Playground;
-
-
-	
-// 	beforeUpdate(() => {
-// 		if (videoElement) {
-// 			videoElement.playbackRate = 0.3; 
-// 		}
-// 		if (videoElement2) {
-// 			videoElement2.playbackRate = 1; 
-// 		}
-// });
-
-
 	let Geometry;
 	onMount(async () => {
-
-		// if (videoElement) {
-		// 	videoElement.playbackRate = 0.3; 
-		// }
-
-		// if (videoElement2) {
-		// 	videoElement2.playbackRate = 1; 
-		// }
 	
-		const module = await import('./playground.svelte');
+		const module = await import('./sun.svelte');
 		Geometry = module.default;
 
 		// ---------------------------------------------------------------------------
@@ -90,10 +67,9 @@
 	</video> -->
 
 		<!-- svelte-ignore a11y-media-has-caption -->
-		<!-- <video bind:this={videoElement2} width="100%" autoplay muted loop class="video2">
-			<source src="bg2.mp4" type="video/mp4">
-		</video>
-	 -->
+		<!-- <video bind:this={videoElement} width="100%" autoplay muted loop class="video2">
+			<source src="bg.mp4" type="video/mp4">
+		</video> -->
 		
 
 	<main>
@@ -124,7 +100,7 @@
 		position: absolute;
 		object-fit: cover;
 
-		z-index: -1;
+		z-index: 1;
 	}
 
 	main {
@@ -144,11 +120,11 @@
 	}
 
 	.video2 {
-		height: 50%;
+		height: 100%;
 		width: 100%;
 		opacity: .75;
 
-		left: 0%;
+		top: 0%;
 		left: 0;
 	}
 	

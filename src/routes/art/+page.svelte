@@ -7,7 +7,6 @@
 </svelte:head>
 
 <section>
-
 	<p>some name - 2022</p>
 	<img src="main.jpg" alt="main" />
 	<p>some name - 2022</p>
@@ -40,12 +39,15 @@
 
 		margin: 20px 0%;
 
+	}
 
+	p {
+		background: var(--black);
+		padding: 4px 10px;
 	}
 
 	h1 {
 		width: 100%;
-		color: transparent;
 		font-family: var(--font-header);
 		font-size: 33vw;
 		line-height: 50%;

@@ -17,16 +17,16 @@
 		},
 		{
 			name: 'WALL',
-			href: '/'
+			href: '/art'
 		},
 	
 		{
 			name: 'SHOP',
-			href: '/'
+			href: '/art'
 		},
 		{
 			name: 'CONTACT',
-			href: '/'
+			href: '/art'
 		},
 
 	];
@@ -47,11 +47,13 @@
 		<Nav {navItems} />
 
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
-	<div on:click={() => toggleDarkMode()} class="darkMode right">
+	<!-- <div on:click={() => toggleDarkMode()} class="darkMode right">
 		<p class:selected={$darkMode == false}>DAY</p>
 		<p class="selected">/</p>
 		<p class:selected={$darkMode == true}>NIGHT</p>
-	</div>
+	</div> -->
+
+	<p class="sun">SICOVECAS : SUN OF THE SUN</p>
 </main>
 </header>
 
@@ -78,9 +80,16 @@
 		font-weight: 300;
 	}
 
-	.darkMode {
+	.sun {
+		background: var(--background);
 		display: flex;
-		width: 200px;
+		padding: 4px 10px;
+	}
+
+	.darkMode {
+		background: var(--background);
+		display: flex;
+		padding: 4px 10px;
 	}
 
 	.left {

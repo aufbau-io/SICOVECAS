@@ -2,12 +2,12 @@
 	import { onMount } from 'svelte';
 	import { darkMode } from '$lib/store/store';
 
-	onMount(async () => {
-		if (!$darkMode) {
-			darkMode.set(!$darkMode);
-		document.querySelector(':root').classList.toggle('dark-mode');
-		}
-	});
+	// onMount(async () => {
+	// 	if (!$darkMode) {
+	// 		darkMode.set(!$darkMode);
+	// 	document.querySelector(':root').classList.toggle('dark-mode');
+	// 	}
+	// });
 </script>
 
 <svelte:head>
@@ -17,8 +17,9 @@
 
 
 <section>
-	<img src="logo_white.png" alt="main" class="logo" />
 	<img src="obi.jpg" alt="main" class="obi" />
+	<img src="logo.svg" alt="main" class="logo" />
+
 </section>
 
 <style>
@@ -46,9 +47,14 @@
 	}
 
 	.obi {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
 		min-width: 480px;
 		max-width: 480px;
-		border: solid var(--black) 3px;
+		border: double var(--background) 5px;
 	}
 
 	.logo {
@@ -57,11 +63,12 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 50%;
+		border: none;
 	}
 
 	h1 {
 	
-		color: var(--primary);
+		color: var(--black);
 		font-family: var(--font-body);
 		font-size: 12vw;
 		line-height: 50%;

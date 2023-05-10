@@ -14,7 +14,7 @@
 		z-index: 10;
 		gap: 10px;
 
-		padding: 20px 20px;
+		padding: 10px 10px;
 		height: calc(2 * var(--margin));
 
 		background: var(--background-alt);
@@ -30,6 +30,8 @@
 
 	footer a,
 	footer p {
+		background: var(--background);
+		padding: 4px 10px;
 		font-size: 13px;
 		font-weight: 300;
 
