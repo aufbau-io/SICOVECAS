@@ -1,5 +1,5 @@
 <script>
-	let img_src = "src/lib/assets/main.jpg" 
+	let img_src = "/main.jpg" 
 </script>
 
 <svelte:head>
