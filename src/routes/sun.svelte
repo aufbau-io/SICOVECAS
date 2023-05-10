@@ -103,11 +103,11 @@
 
 	function render() {
 		const elapsedTime = clock.getElapsedTime();
-		const deltaTime = elapsedTime - previousTime;
+		// const deltaTime = elapsedTime - previousTime;
 		previousTime = elapsedTime;
 
-		sphere.rotation.z += Math.tan(elapsedTime / 4000000000) * factor;
-		sphere_2.rotation.x += Math.tan(elapsedTime / 4000000000) * factor;
+		sphere.rotation.z += Math.tan(previousTime / 4000000000) * factor;
+		sphere_2.rotation.x += Math.tan(previousTime / 4000000000) * factor;
 
 		if (sphere.rotation.z > 0.000005) {
 			factor = -1;
