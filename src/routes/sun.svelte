@@ -41,7 +41,7 @@
 
 		// -------------------------------------------------------------------------
 
-		let numSegments = $screenType == 3 ? 960 : 480; 
+		let numSegments = $screenType == 3 ? 960 : 240; 
 
 		sphere = new THREE.Mesh(
 			new THREE.SphereGeometry(150, numSegments),
