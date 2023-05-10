@@ -79,10 +79,6 @@
 	}
 
 @media (max-width: 768px) {
-
-	.logo {
-		width: 90%;
-	}
 	h1 {
 		opacity: 0;
 		height:0;
