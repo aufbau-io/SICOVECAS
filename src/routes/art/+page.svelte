@@ -39,7 +39,6 @@
 
 	section img {
 		width: 640px;
-		max-width: 80%;
 	}
 
 	p {
