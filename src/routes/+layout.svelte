@@ -128,7 +128,7 @@
 		left: 0;
 	}
 	
-
+/* 
 	header {
 		position: absolute;
 		top: 0;
@@ -139,7 +139,7 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-	}
+	} */
 
 	main {
 		flex: 1;

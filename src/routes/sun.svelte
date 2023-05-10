@@ -100,8 +100,8 @@
 		// const deltaTime = elapsedTime - previousTime;
 		// previousTime = elapsedTime;
 
-		sphere.rotation.z += Math.sin(elapsedTime / 4000000000) * factor;
-		sphere_2.rotation.x += Math.sin(elapsedTime / 4000000000) * factor;
+		sphere.rotation.z += Math.sin(elapsedTime / 10000000000) * factor;
+		sphere_2.rotation.x += Math.sin(elapsedTime / 10000000000) * factor;
 
 		if (sphere.rotation.z > 0.000005) {
 			factor = -1;
