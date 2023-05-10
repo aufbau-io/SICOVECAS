@@ -29,15 +29,12 @@
 		gap: 10px;
 		/* background: var(--background); */
 
-	
-		left: 10%;
-		top: 0%;
 		overflow: auto;
 
 		width: 100%;
 		padding: 0 30%;
 
-		margin: 20px 0%;
+		margin: 20px 0;
 
 	}
 

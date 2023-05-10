@@ -95,6 +95,10 @@
 
 	}
 
+	header {
+		position: absolute;
+	}
+
 
 	video {
 		position: absolute;
