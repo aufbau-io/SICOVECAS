@@ -75,9 +75,10 @@
 
 		padding: 10px 10px;
 		font-size: 13px;
-		height: calc(3 * var(--margin));
+		height: calc(2 * var(--margin));
 		font-family: var(--font-body);
 		font-weight: 300;
+		
 	}
 
 	.sun {
