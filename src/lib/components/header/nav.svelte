@@ -37,7 +37,7 @@
 		line-height: 110%;
 		text-transform: none;
 		letter-spacing: 0.1em;
-		padding: 16px;
+		padding: 13px;
 		cursor: pointer;
 	}
 

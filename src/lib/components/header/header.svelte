@@ -13,7 +13,7 @@
 		},
 		{
 			name: 'ART',
-			href: '/'
+			href: '/art'
 		},
 		{
 			name: 'WALL',
@@ -48,9 +48,9 @@
 
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<div on:click={() => toggleDarkMode()} class="darkMode right">
-		<p class:selected={$darkMode == true}>PLAY</p>
+		<p class:selected={$darkMode == false}>DAY</p>
 		<p class="selected">/</p>
-		<p class:selected={$darkMode == false}>PAUSE</p>
+		<p class:selected={$darkMode == true}>NIGHT</p>
 	</div>
 </main>
 </header>
@@ -72,10 +72,10 @@
 		align-items: center;
 
 		padding: 10px 10px;
-		font-size: 15px;
+		font-size: 13px;
 		height: calc(3 * var(--margin));
 		font-family: var(--font-body);
-		font-weight: 500;
+		font-weight: 300;
 	}
 
 	.darkMode {

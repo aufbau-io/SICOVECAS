@@ -12,14 +12,14 @@
 	--orange: #daaa55;
 }
 
-:root {
+:root.dark-mode {
 	--background: #daaa55;
 	--primary: #232323;
 	--primary-50: #d0d0d080;
 }
 
-:root.dark-mode {
-	--background: none;
+:root {
+	--background: #232323;
 	--primary: #f0f0f0;
 	--primary-50: #eecccc80;
 }

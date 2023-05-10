@@ -18,7 +18,7 @@
 
 <section>
 	<img src="logo_white.png" alt="main" class="logo" />
-	<img src="obi.jpg" alt="main" class="obi" />z
+	<img src="obi.jpg" alt="main" class="obi" />
 </section>
 
 <style>
@@ -46,9 +46,9 @@
 	}
 
 	.obi {
-		min-width: 540px;
-		max-width: 540px;
-		border: double var(--orange) 3px;
+		min-width: 480px;
+		max-width: 480px;
+		border: solid var(--black) 3px;
 	}
 
 	.logo {

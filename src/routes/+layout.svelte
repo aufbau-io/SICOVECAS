@@ -7,32 +7,33 @@
 	import Header from '$lib/components/header/header.svelte';
 	import Footer from '$lib/components/footer/footer.svelte';
 
-	let videoElement, videoElement2;
+	// let videoElement, videoElement2;
+	let Playground;
 
 
 	
-	beforeUpdate(() => {
-		if (videoElement) {
-			videoElement.playbackRate = 0.3; 
-		}
-		if (videoElement2) {
-			videoElement2.playbackRate = 1; 
-		}
-});
+// 	beforeUpdate(() => {
+// 		if (videoElement) {
+// 			videoElement.playbackRate = 0.3; 
+// 		}
+// 		if (videoElement2) {
+// 			videoElement2.playbackRate = 1; 
+// 		}
+// });
 
 
 	let Geometry;
 	onMount(async () => {
 
-		if (videoElement) {
-			videoElement.playbackRate = 0.3; 
-		}
+		// if (videoElement) {
+		// 	videoElement.playbackRate = 0.3; 
+		// }
 
-		if (videoElement2) {
-			videoElement2.playbackRate = 1; 
-		}
+		// if (videoElement2) {
+		// 	videoElement2.playbackRate = 1; 
+		// }
 	
-		const module = await import('$lib/components/three/cloth.svelte');
+		const module = await import('./playground.svelte');
 		Geometry = module.default;
 
 		// ---------------------------------------------------------------------------
@@ -71,7 +72,7 @@
 	});
 </script>
 
-<!-- <svelte:component this={Geometry} /> -->
+<svelte:component this={Geometry} />
 
 
 <div class="app">
@@ -89,11 +90,10 @@
 	</video> -->
 
 		<!-- svelte-ignore a11y-media-has-caption -->
-		<video bind:this={videoElement2} width="100%" autoplay muted loop class="video2">
+		<!-- <video bind:this={videoElement2} width="100%" autoplay muted loop class="video2">
 			<source src="bg2.mp4" type="video/mp4">
-			<!-- <source src="bg.ogg" type="video/ogg"> -->
 		</video>
-	
+	 -->
 		
 
 	<main>
@@ -127,12 +127,12 @@
 		z-index: -1;
 	}
 
-	/* main {
+	main {
 		z-index: 10;
 	}
 	header, footer {
 		z-index: 11;
-	} */
+	}
 
 	.video1 {
 		height: 50%;
