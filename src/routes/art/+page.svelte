@@ -38,7 +38,8 @@
 	}
 
 	section img {
-		width: 600px;
+		width: 640px;
+		max-width: 80%;
 	}
 
 	p {
