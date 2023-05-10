@@ -97,6 +97,7 @@
 
 	header {
 		position: absolute;
+		width: 100%;
 	}
 
 
