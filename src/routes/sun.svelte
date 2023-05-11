@@ -110,7 +110,7 @@
 
 		if (sphere.rotation.z > 0.000005) {
 			factor = -1;
-		} else if (sphere.rotation.z < - 0.000005) {
+		} else if (sphere.rotation.z < -0.000005) {
 			factor = 1;
 		}
 
