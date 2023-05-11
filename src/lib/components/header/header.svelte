@@ -54,7 +54,7 @@
 	</div> -->
 
 	{#if $screenType == 3}
-	<p class="sun">SICOVECAS : SUN OF THE SUN</p>
+	<p class="sun">SICOVECAS : SON OF THE SUN</p>
 	{/if}
 </main>
 </header>

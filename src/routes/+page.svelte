@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<title>SICOVECAS // SUN OF THE SUN</title>
+	<title>SICOVECAS // SON OF THE SUN</title>
 	<meta name="description" content="SICOVECAS DEMO - AUFBAU IO" />
 </svelte:head>
 
