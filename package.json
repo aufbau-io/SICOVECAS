@@ -25,7 +25,6 @@
 	"dependencies": {
 		"@sveltejs/adapter-netlify": "^1.0.0",
 		"autoprefixer": "^10.4.13",
-		"cannon-es": "^0.20.0",
 		"cssnano": "^5.1.14",
 		"svelte-preprocess": "^5.0.0",
 		"tailwindcss": "^3.2.4",
