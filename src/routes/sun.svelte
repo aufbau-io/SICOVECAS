@@ -1,8 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
 	import { screenType } from '$lib/store/store';
+
 	import * as THREE from 'three';
-	let group;
+	import gsap from 'gsap'
 
 	let container;
 
@@ -60,6 +61,9 @@
 
 		scene.add(sphere, sphere_2);
 
+		sphere.rotation.z = 0.000001
+		sphere_2.rotation.x = 0.000001
+
 		scene.rotation.x += Math.PI / 2;
 
 		// -------------------------------------------------------------------------
@@ -99,6 +103,8 @@
 		render();
 	}
 
+	// gsap.to(sphere.rotation, { duration: 1000, z: 0.1, yoyo: true, repeat: -1 })
+	// gsap.to(sphere_2.rotation, { duration: 1000, x: 0.1, yoyo: true, repeat: -1 })
 
 	function render() {
 		const elapsedTime = clock.getElapsedTime();
@@ -109,8 +115,12 @@
 		sphere_2.rotation.x += Math.tan(deltaTime  / 20000000) * factor;
 
 		if (sphere.rotation.z > 0.000005) {
+			sphere.rotation.z = 0.000005
+			sphere_2.rotation.x = 0.000005
 			factor = -1;
 		} else if (sphere.rotation.z < -0.000005) {
+			sphere.rotation.z = -0.000005
+			sphere_2.rotation.x = -0.000005
 			factor = 1;
 		}
 
