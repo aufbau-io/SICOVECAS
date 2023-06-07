@@ -79,7 +79,6 @@ declare module '$env/static/private' {
 	export const npm_node_execpath: string;
 	export const npm_package_dependencies_autoprefixer: string;
 	export const npm_package_dependencies_cssnano: string;
-	export const npm_package_dependencies_gsap: string;
 	export const npm_package_dependencies_svelte_preprocess: string;
 	export const npm_package_dependencies_tailwindcss: string;
 	export const npm_package_dependencies_three: string;
@@ -225,7 +224,6 @@ declare module '$env/dynamic/private' {
 		npm_node_execpath: string;
 		npm_package_dependencies_autoprefixer: string;
 		npm_package_dependencies_cssnano: string;
-		npm_package_dependencies_gsap: string;
 		npm_package_dependencies_svelte_preprocess: string;
 		npm_package_dependencies_tailwindcss: string;
 		npm_package_dependencies_three: string;

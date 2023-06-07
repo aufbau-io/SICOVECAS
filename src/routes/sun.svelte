@@ -3,7 +3,6 @@
 	import { screenType } from '$lib/store/store';
 
 	import * as THREE from 'three';
-	import gsap from 'gsap'
 
 	let container;
 
