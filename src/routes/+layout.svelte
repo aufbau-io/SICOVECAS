@@ -10,7 +10,7 @@
 	let Geometry;
 	onMount(async () => {
 	
-		const module = await import('./sun.svelte');
+		const module = await import('$lib/components/three/sun.svelte');
 		Geometry = module.default;
 
 		// ---------------------------------------------------------------------------
