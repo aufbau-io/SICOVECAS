@@ -12,7 +12,11 @@
 			href: '/'
 		},
 		{
-			name: 'ART',
+			name: 'ESSENCE',
+			href: '/art'
+		},
+		{
+			name: 'PROJECT',
 			href: '/art'
 		},
 		{
