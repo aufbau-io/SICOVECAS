@@ -1,0 +1,3 @@
+[submodule "strapi"]
+	path = strapi
+	url = https://github.com/aufbau-io/strapi-sqlite-sicovecas.git
