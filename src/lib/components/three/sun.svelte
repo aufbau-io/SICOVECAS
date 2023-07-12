@@ -45,9 +45,15 @@
 		const textureLoader = new THREE.TextureLoader();
 		const texture = textureLoader.load('obi.jpg'); // The path to your image
 
-		const material = new THREE.MeshBasicMaterial({ map: texture });
-		const geometry = new THREE.PlaneGeometry(height / 20, height / 20);
+		const material2 = new THREE.MeshBasicMaterial({ color: 0x232323 });
+		const geometry2 = new THREE.PlaneGeometry(height / 21.6, height / 21.6);
+		const mesh2 = new THREE.Mesh(geometry2, material2);
+		mesh2.position.set(0, 150, 0);
+		mesh2.rotation.x = - Math.PI / 2;
+		scene.add(mesh2);
 
+		const material = new THREE.MeshBasicMaterial({ map: texture });
+		const geometry = new THREE.PlaneGeometry(height / 22, height / 22);
 		const mesh = new THREE.Mesh(geometry, material);
 		mesh.position.set(0, 150, 0);
 		mesh.rotation.x = - Math.PI / 2;
