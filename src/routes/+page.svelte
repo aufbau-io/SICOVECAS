@@ -16,10 +16,10 @@
 </svelte:head>
 
 
-<!-- <section>
+<section>
 	<img src="obi.jpg" alt="main" class="obi" />
 	<img src="logo.svg" alt="main" class="logo" />
-</section> -->
+</section>
 
 <!-- <section><p style="color:#232323;background:var(--orange);z-index:10;">Sicovecas' art, play with elements of water, jugs and wild plants,
 	representing his experience of growing up in Jogja- a city known

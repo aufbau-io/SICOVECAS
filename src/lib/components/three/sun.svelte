@@ -79,7 +79,7 @@
 		bandMesh.rotation.z = Math.PI / 4;
 		bandMesh.position.set(0, 150, 0); // The same position as the image
 
-		scene.add(bandMesh);
+		// scene.add(bandMesh);
 
 
 
