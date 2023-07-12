@@ -26,6 +26,9 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const CONTENTFUL_SPACE_ID: string;
+	export const CONTENTFUL_ACCESS_TOKEN: string;
+	export const CONTENTFUL_MANAGEMENT_TOKEN: string;
 	export const ADSK_3DSMAX_x64_2023: string;
 	export const ALLUSERSPROFILE: string;
 	export const APPDATA: string;
@@ -172,6 +175,9 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		CONTENTFUL_SPACE_ID: string;
+		CONTENTFUL_ACCESS_TOKEN: string;
+		CONTENTFUL_MANAGEMENT_TOKEN: string;
 		ADSK_3DSMAX_x64_2023: string;
 		ALLUSERSPROFILE: string;
 		APPDATA: string;

@@ -24,7 +24,7 @@
 </section>
 
 
-<section>
+<!-- <section>
 	<p>some name - 2022</p>
 	<img src={img_src} alt="main" />
 	<p>some name - 2022</p>
@@ -35,7 +35,7 @@
 	<img src={img_src} alt="main" />
 	<p>some name - 2022</p>
 	<img src={img_src} alt="main" />
-</section>
+</section> -->
 
 <style>
 	section {
