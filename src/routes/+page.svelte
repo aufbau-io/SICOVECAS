@@ -21,6 +21,14 @@
 	<img src="logo.svg" alt="main" class="logo" />
 </section> -->
 
+<!-- <section><p style="color:#232323;background:var(--orange);z-index:10;">Sicovecas' art, play with elements of water, jugs and wild plants,
+	representing his experience of growing up in Jogja- a city known
+	for being colourful and full of overlap but still in harmony.
+	His characteristic abstract patterns reflect the movement and
+	the energy of his hometown.
+	</p></section> -->
+
+
 <style>
 	section {
 		display: flex;
