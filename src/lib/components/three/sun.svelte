@@ -25,6 +25,12 @@
 	let previousTime = 0;
 	let elapsedTime = 0;
 
+	let bandMesh, bandTexture;
+
+	const maxRotation = 30 * Math.PI / 180;
+	let targetRotationY = 0;
+	let targetRotationZ = 0;
+
 	init();
 	animate();
 
@@ -34,6 +40,43 @@
 
 		scene = new THREE.Scene();
 		scene.background = new THREE.Color(0xdaaa55);
+
+		// Create Obi Square
+		const textureLoader = new THREE.TextureLoader();
+		const texture = textureLoader.load('obi.jpg'); // The path to your image
+
+		const material = new THREE.MeshBasicMaterial({ map: texture });
+		const geometry = new THREE.PlaneGeometry(height / 20, height / 20);
+
+		const mesh = new THREE.Mesh(geometry, material);
+		mesh.position.set(0, 150, 0);
+		mesh.rotation.x = - Math.PI / 2;
+		scene.add(mesh);
+
+		// Create Text Ring
+		const radius = height / 20;
+		const cylinderGeometry = new THREE.CylinderGeometry(radius, radius, 11, 64, 1, true); 
+		// const bandMaterial = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.DoubleSide });
+
+		// Load texture
+		const bandTextureLoader = new THREE.TextureLoader();
+		bandTexture = bandTextureLoader.load('logo.svg'); // The path to your image
+		bandTexture.wrapS = THREE.RepeatWrapping; // This allows the texture to repeat
+		bandTexture.repeat.set(5, 1); // Repeat twice horizontally and once vertically
+		const bandMaterial = new THREE.MeshBasicMaterial({ map: bandTexture, side: THREE.DoubleSide });
+
+
+
+		bandMesh = new THREE.Mesh(cylinderGeometry, bandMaterial);
+		scene.add(bandMesh);
+
+		bandMesh.rotation.x = - Math.PI / 2;
+		bandMesh.rotation.z = Math.PI / 4;
+		bandMesh.position.set(0, 150, 0); // The same position as the image
+
+		scene.add(bandMesh);
+
+
 
 		// const light = new THREE.DirectionalLight(0xf4f4f4);
 		// light.position.set(0, 1, 1);
@@ -75,7 +118,7 @@
 			container.appendChild(renderer.domElement);
 		});
 
-		// document.addEventListener('mousemove', onDocumentMouseMove);
+		window.addEventListener('mousemove', onDocumentMouseMove);
 		window.addEventListener('resize', onWindowResize);
 	}
 
@@ -92,10 +135,14 @@
 		renderer.setSize(width, height);
 	}
 
-	// function onDocumentMouseMove(event) {
-	// 	mouseX = event.clientX;
-	// 	mouseY = event.clientY;
-	// }
+	function onDocumentMouseMove(event) {
+		mouseX = (event.clientX / width) * 2 - 1;
+		mouseY = (event.clientY / height) * 2 - 1;
+
+		targetRotationY = maxRotation * mouseX;
+		targetRotationZ = maxRotation/100 + Math.PI/2 * mouseY;
+		// mouseY = event.clientY;
+	}
 
 	function animate() {
 		requestAnimationFrame(animate);
@@ -122,6 +169,12 @@
 			sphere_2.rotation.x = -0.000005
 			factor = 1;
 		}
+
+		let direction = bandMesh.rotation.y < targetRotationY ? 1 : -1;
+
+		bandMesh.rotation.y = THREE.MathUtils.lerp(bandMesh.rotation.y, targetRotationY, deltaTime/2);
+		bandMesh.rotation.z = THREE.MathUtils.lerp(bandMesh.rotation.z, targetRotationZ, deltaTime/2);
+		bandTexture.offset.x -= 0.05 * direction * deltaTime;
 
 		// camera.lookAt(scene.position);
 		renderer.render(scene, camera);

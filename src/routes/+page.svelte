@@ -16,10 +16,10 @@
 </svelte:head>
 
 
-<section>
+<!-- <section>
 	<img src="obi.jpg" alt="main" class="obi" />
 	<img src="logo.svg" alt="main" class="logo" />
-</section>
+</section> -->
 
 <style>
 	section {
