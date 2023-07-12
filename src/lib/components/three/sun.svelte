@@ -42,8 +42,8 @@
 		scene.background = new THREE.Color(0xdaaa55);
 
 		// Create Obi Square
-		const textureLoader = new THREE.TextureLoader();
-		const texture = textureLoader.load('obi.jpg'); // The path to your image
+		// const textureLoader = new THREE.TextureLoader();
+		// const texture = textureLoader.load('obi.jpg'); // The path to your image
 
 		// const material2 = new THREE.MeshBasicMaterial({ color: 0x232323 });
 		// const geometry2 = new THREE.PlaneGeometry(height / 20, height / 20);
@@ -52,24 +52,24 @@
 		// mesh2.rotation.x = - Math.PI / 2;
 		// scene.add(mesh2);
 
-		const material = new THREE.MeshBasicMaterial({ map: texture });
-		const geometry = new THREE.PlaneGeometry(height / 21, height / 21);
-		const mesh = new THREE.Mesh(geometry, material);
-		mesh.position.set(0, 150, 0);
-		mesh.rotation.x = - Math.PI / 2;
-		scene.add(mesh);
+		// const material = new THREE.MeshBasicMaterial({ map: texture });
+		// const geometry = new THREE.PlaneGeometry(height / 21, height / 21);
+		// const mesh = new THREE.Mesh(geometry, material);
+		// mesh.position.set(0, 150, 0);
+		// mesh.rotation.x = - Math.PI / 2;
+		// // scene.add(mesh);
 
-		// Create Text Ring
-		const radius = height / 20;
-		const cylinderGeometry = new THREE.CylinderGeometry(radius, radius, 11, 64, 1, true); 
-		// const bandMaterial = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.DoubleSide });
+		// // Create Text Ring
+		// const radius = height / 20;
+		// const cylinderGeometry = new THREE.CylinderGeometry(radius, radius, 11, 64, 1, true); 
+		// // const bandMaterial = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.DoubleSide });
 
-		// Load texture
-		const bandTextureLoader = new THREE.TextureLoader();
-		bandTexture = bandTextureLoader.load('logo.svg'); // The path to your image
-		bandTexture.wrapS = THREE.RepeatWrapping; // This allows the texture to repeat
-		bandTexture.repeat.set(5, 1); // Repeat twice horizontally and once vertically
-		const bandMaterial = new THREE.MeshBasicMaterial({ map: bandTexture, side: THREE.DoubleSide, transparent: true });
+		// // Load texture
+		// const bandTextureLoader = new THREE.TextureLoader();
+		// bandTexture = bandTextureLoader.load('logo.svg'); // The path to your image
+		// bandTexture.wrapS = THREE.RepeatWrapping; // This allows the texture to repeat
+		// bandTexture.repeat.set(5, 1); // Repeat twice horizontally and once vertically
+		// const bandMaterial = new THREE.MeshBasicMaterial({ map: bandTexture, side: THREE.DoubleSide, transparent: true });
 
 
 
