@@ -73,11 +73,11 @@
 
 
 
-		bandMesh = new THREE.Mesh(cylinderGeometry, bandMaterial);
+		// bandMesh = new THREE.Mesh(cylinderGeometry, bandMaterial);
 
-		bandMesh.rotation.x = - Math.PI / 2;
-		bandMesh.rotation.z = Math.PI / 4;
-		bandMesh.position.set(0, 150, 0); // The same position as the image
+		// bandMesh.rotation.x = - Math.PI / 2;
+		// bandMesh.rotation.z = Math.PI / 4;
+		// bandMesh.position.set(0, 150, 0); // The same position as the image
 
 		// scene.add(bandMesh);
 
