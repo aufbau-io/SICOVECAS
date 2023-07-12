@@ -53,7 +53,7 @@
 		// scene.add(mesh2);
 
 		const material = new THREE.MeshBasicMaterial({ map: texture });
-		const geometry = new THREE.PlaneGeometry(height / 20.4, height / 20.4);
+		const geometry = new THREE.PlaneGeometry(height / 21, height / 21);
 		const mesh = new THREE.Mesh(geometry, material);
 		mesh.position.set(0, 150, 0);
 		mesh.rotation.x = - Math.PI / 2;
