@@ -1,11 +1,28 @@
 <script>
 	let img_src = "/main.jpg" 
+
+	export let data;
 </script>
 
 <svelte:head>
 	<title>SICOVECAS // ART</title>
 	<meta name="description" content="SICOVECAS DEMO - AUFBAU IO" />
 </svelte:head>
+
+<section class="team">
+	{#each data.employees as employee}
+		<figure>
+			<img src={employee.photo.url} alt={employee.photo.description} />
+			<figcaption>
+				<p><strong>{employee.name}</strong> — {employee.jobTitle}</p>
+				<p>
+					<em>Joined in {employee.startDate} </em>
+				</p>
+			</figcaption>
+		</figure>
+	{/each}
+</section>
+
 
 <section>
 	<p>some name - 2022</p>

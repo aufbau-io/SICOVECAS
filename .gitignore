@@ -1,6 +1,16 @@
+# dependencies
 /node_modules/
 /public/build/
 
+# local files
 .DS_Store
 .svelte-kit
 yarn.lock
+
+
+# env files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
