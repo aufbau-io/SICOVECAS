@@ -63,12 +63,11 @@
 		bandTexture = bandTextureLoader.load('logo.svg'); // The path to your image
 		bandTexture.wrapS = THREE.RepeatWrapping; // This allows the texture to repeat
 		bandTexture.repeat.set(5, 1); // Repeat twice horizontally and once vertically
-		const bandMaterial = new THREE.MeshBasicMaterial({ map: bandTexture, side: THREE.DoubleSide });
+		const bandMaterial = new THREE.MeshBasicMaterial({ map: bandTexture, side: THREE.DoubleSide, transparent: true });
 
 
 
 		bandMesh = new THREE.Mesh(cylinderGeometry, bandMaterial);
-		scene.add(bandMesh);
 
 		bandMesh.rotation.x = - Math.PI / 2;
 		bandMesh.rotation.z = Math.PI / 4;
@@ -140,7 +139,7 @@
 		mouseY = (event.clientY / height) * 2 - 1;
 
 		targetRotationY = maxRotation * mouseX;
-		targetRotationZ = maxRotation/100 + Math.PI/2 * mouseY;
+		targetRotationZ = maxRotation/180 + Math.PI/2 * mouseY;
 		// mouseY = event.clientY;
 	}
 
@@ -187,6 +186,6 @@
 	.geometry {
 		position: absolute;
 		overflow: hidden;
-		opacity: .75;
+		opacity: .95;
 	}
 </style>

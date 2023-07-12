@@ -50,6 +50,7 @@ body {
 	min-height: 100vh;
 	font-family: var(--font-body);
 	margin: 0;
+	background: var(--background);
 	/*cursor: url(/spray-paint.png), default;*/
 }
 
