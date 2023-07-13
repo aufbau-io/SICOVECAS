@@ -61,7 +61,7 @@
 
 		// Create Text Ring
 		const radius = height / 20;
-		const cylinderGeometry = new THREE.CylinderGeometry(radius, radius, 11, 64, 1, true); 
+		const cylinderGeometry = new THREE.CylinderGeometry(radius, radius, 10, 64, 1, true); 
 		// const bandMaterial = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.DoubleSide });
 
 		// Load texture
