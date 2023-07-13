@@ -41,16 +41,12 @@
 	}
 
 	nav a:hover {
-		opacity: 0.6;
-	}
-
-	.active {
-		opacity: 1;
+		text-decoration: none;
 		color: #f0f0f0;
 	}
 
-	.active:hover {
-		opacity: 1;
-		text-decoration: none;
+	.active {
+		color: #f0f0f0;
 	}
+
 </style>
