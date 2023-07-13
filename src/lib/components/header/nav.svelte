@@ -47,5 +47,6 @@
 	.active,
 	.active:hover {
 		opacity: 1;
+		color: #f0f0f0;
 	}
 </style>
