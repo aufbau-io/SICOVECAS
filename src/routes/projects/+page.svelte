@@ -4,9 +4,9 @@
 
 <section>
 <div class="main">
-  <div class="icons">
+  <!-- <div class="icons">
 		<img src={www} alt="graph" class="icon" />
-	</div>
+	</div> -->
 		<h1>PROJECTS<br>-</h1>
 		<p>Words</p>
 	</div>
