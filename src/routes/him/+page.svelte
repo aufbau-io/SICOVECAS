@@ -8,7 +8,13 @@
 		<img src={www} alt="graph" class="icon" />
 	</div> -->
 		<h1>HIM<br>-</h1>
-		<p>Words</p>
+		<div style="display: flex;">
+			<img src="obi.jpg" style="width: 50%;">
+			<img src="main.jpg" style="width: 50%;">
+		</div>
+		<p>Sicovecas is a Yogyakartan mural and graffiti artist who found his identity as ‘As I See’ (SIC) in 2006. His pieces play with elements of water, jugs, and wild plants, representing his experience of growing up in Jogja — a city known for being colourful and full of overlap but somehow still in harmony. His characteristic abstract patterns reflect the movement and the energy of his hometown.
+			<br><br>
+			Although often a subtle feature in his work, water is central as it represents the flow of dissatisfaction and desire to keep digging for the most current, authentic version of himself.</p>
 	</div>
 </section>
 
@@ -40,6 +46,12 @@ section {
 		color: var(--primary);
 		border: var(--border);
 		padding:  40px 48px;
+	}
+
+	.main p {
+		padding:20px;
+		background:var(--black);
+		z-index:10;
 	}
 
   .icons {

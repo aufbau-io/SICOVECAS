@@ -10,7 +10,7 @@
 	<div class="main">
 
 		<!-- <h1>SICOVECAS</h1> -->
-		<p style="padding:20px;background:var(--black);z-index:10;">
+		<p style="">
 			Sicovecas' art plays with elements from water, jugs, and wild plants.
 			These represent his experience of growing up in Jogja - a city known
 			for being colourful, full of overlap but still in harmony.
@@ -50,6 +50,12 @@
 		color: var(--primary);
 		border: var(--border);
 		padding:  20px;
+	}
+
+	.main p {
+		padding:20px;
+		background:var(--black);
+		z-index:10;
 	}
 
 	/* .icons {
