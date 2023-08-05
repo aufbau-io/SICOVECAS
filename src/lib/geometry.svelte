@@ -93,7 +93,7 @@
 
 				void main() {
 					vec2 position = vUv * 4.0;
-					float wave = 0.5 * (tan(position.x + time * 0.1 + 10.0 ) +  mouse.x + sin(position.y + time +  mouse.y));
+					float wave = 0.5 * (tan(position.x + time * 0.1 + 10.0 ) + mouse.x + sin(position.y + time +  mouse.y));
 					vec3 color = mix(color1, color2, wave);
 					color = mix(color, color3, wave * wave);
 					gl_FragColor = vec4(color, 1.0);
@@ -142,14 +142,17 @@
 
 	function onDocumentMouseMove(event) {
 		event.preventDefault();
-    var clientX = event.clientX || (event.touches && event.touches[0].clientX);
-    var clientY = event.clientY || (event.touches && event.touches[0].clientY);
+    var clientX = event.clientX;
+    var clientY = event.clientY;
 
-    var mouse = new THREE.Vector2();
-    mouse.x = ((clientX +1 ) / window.innerWidth) * 2 - 1;
-    mouse.y = -((clientY + 1) / window.innerHeight) * 2 + 1;
+		var mouse = new THREE.Vector2();
+    mouse.x = (clientX / window.innerWidth) * 2 - 1;
+		mouse.y = -(clientY / window.innerHeight) * 2 + 1;
+
+		console.log(mouse)
 		shaderMaterial.uniforms.mouse.value = mouse;
 		shaderMaterial2.uniforms.mouse.value = mouse;
+
 
 
 	};

@@ -47,7 +47,7 @@
 		background: var(--background);
 		color: var(--primary);
 		border: var(--border);
-		padding:  20px 20px;
+		padding:  20px;
 	}
 
 	/* .icons {
