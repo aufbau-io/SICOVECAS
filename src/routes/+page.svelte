@@ -13,7 +13,7 @@
 		<p style="">
 			Sicovecas' art plays with elements from water, jugs, and wild plants,
 			representing his experience of growing up in Jogja - a city known
-			for being colourful, full of overlap but still in harmony.
+			for being colourful and full of overlap, but somehow still in harmony.
 			His characteristic abstract patterns reflect the movement and
 			the energy of his hometown.
 			</p>
@@ -39,7 +39,7 @@
 	}
 
 	.main {
-		max-width: 800px;
+		max-width: 840px;
 
 		display: flex;
 		flex-flow: column nowrap;
