@@ -11,7 +11,7 @@
 
 		<!-- <h1>SICOVECAS</h1> -->
 		<p style="padding:20px;background:var(--black);z-index:10;">
-			Sicovecas' art plays with elements of water, jug and wild plant.
+			Sicovecas' art plays with elements of water, jug, and wild plant.
 			These motifs represent his experience of growing up in Jogja - a city known
 			for being colourful, full of overlap, but still in harmony.
 			His characteristic abstract patterns reflect the movement and
