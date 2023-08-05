@@ -38,7 +38,7 @@ section {
 		background: var(--background);
 		color: var(--primary);
 		border: var(--border);
-		padding:  40px 48px;
+		padding:  20px;
 	}
 
   .icons {
@@ -57,8 +57,6 @@ section {
 			position: absolute;
 			bottom: 20px;
 			width: calc(100% - 40px);
-			gap: 10px;
-			padding:  20px 20px;
 		}
 	}
 </style>

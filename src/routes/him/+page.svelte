@@ -45,7 +45,7 @@ section {
 		background: var(--background);
 		color: var(--primary);
 		border: var(--border);
-		padding:  20px 20px;
+		padding:  20px;
 		z-index:-1;
 	}
 
@@ -65,8 +65,6 @@ section {
 			position: absolute;
 			bottom: 20px;
 			width: 90vw;
-			gap: 24px;
-			padding:  20px 20px;
 		}
 	}
 </style>
