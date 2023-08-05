@@ -149,7 +149,7 @@
     mouse.x = (clientX / window.innerWidth) * 2 - 1;
 		mouse.y = -(clientY / window.innerHeight) * 2 + 1;
 
-		console.log(mouse)
+		// console.log(mouse)
 		shaderMaterial.uniforms.mouse.value = mouse;
 		shaderMaterial2.uniforms.mouse.value = mouse;
 
