@@ -1,45 +1,35 @@
 <script>
-
-	import logo from '$lib/images/logo.svg';
+	import www from '$lib/images/icons/www.svg';
 </script>
 
 <section>
-			<!-- <div class="icons">
-			<img src={logo} alt="logo" class="icon" />
-		</div> -->
-	<div class="main">
-
-		<!-- <h1>SICOVECAS</h1> -->
-		<p style="">
-			Sicovecas' art plays with elements from water, jugs, and wild plants,
-			representing his experience of growing up in Jogja - a city known
-			for being colourful and full of overlap, but somehow still in harmony.
-			His characteristic abstract patterns reflect the movement and
-			the energy of his hometown.
-			</p>
+<div class="main">
+  <!-- <div class="icons">
+		<img src={www} alt="graph" class="icon" />
+	</div> -->
+		<!-- <h1>SICOVECAS<br>-</h1> -->
+		<p>Son of the sun</p>
 	</div>
-	
 </section>
 
 <style>
-	section {
-		padding: 0 0;
-		height: 100%;
-		width: 100%;
+section {
+  padding: 0 0;
+  height: 100%;
+  width: 100%;
 
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 
-		align-items: center;
-		text-align: center;
+  align-items: center;
+  text-align: center;
 
-		/* background: var(--primary-50); */
-		overflow: auto;
-	}
+  overflow: auto;
+}
 
-	.main {
-		max-width: 840px;
+.main {
+		max-width: 800px;
 
 		display: flex;
 		flex-flow: column nowrap;
@@ -49,16 +39,10 @@
 		background: var(--background);
 		color: var(--primary);
 		border: var(--border);
-		padding:  20px;
+		padding:  40px 48px;
 	}
 
-	.main p {
-		padding:20px;
-		background:var(--black);
-		z-index:10;
-	}
-
-	/* .icons {
+  .icons {
 		display: flex;
 		flex-flow: row;
 		padding-bottom: 10px;
@@ -67,16 +51,15 @@
 	.icon {
 		height: 60px;
 		width: 100%;
-	} */
-
+	}
 
 	@media only screen and (max-width: 768px) {
 		.main {
 			position: absolute;
 			bottom: 5%;
 			width: 90vw;
-			gap: 16px;
-			padding:  24px 20px;
+			gap: 24px;
+			padding:  40px 24px;
 		}
 	}
 </style>
