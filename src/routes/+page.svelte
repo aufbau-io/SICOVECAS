@@ -4,10 +4,11 @@
 </script>
 
 <section>
-	<div class="main">
-		<div class="icons">
+			<!-- <div class="icons">
 			<img src={logo} alt="logo" class="icon" />
-		</div>
+		</div> -->
+	<div class="main">
+
 		<!-- <h1>SICOVECAS</h1> -->
 		<p style="padding:20px;background:var(--black);z-index:10;">Sicovecas' art plays with elements from water, jugs and wild plants,
 			representing his experience of growing up in Jogja - a city known
