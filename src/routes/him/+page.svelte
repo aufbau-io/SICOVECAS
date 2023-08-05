@@ -7,7 +7,7 @@
   <!-- <div class="icons">
 		<img src={www} alt="graph" class="icon" />
 	</div> -->
-		<h1>CONTACT<br>-</h1>
+		<h1>HIM<br>-</h1>
 		<p>Words</p>
 	</div>
 </section>

@@ -17,6 +17,10 @@
 			href: '/'
 		},
 		{
+			name: 'HIM',
+			href: '/him'
+		},
+		{
 			name: 'PROJECTS',
 			href: '/projects'
 		},
@@ -27,10 +31,6 @@
 		{
 			name: 'SHOP',
 			href: '/shop'
-		},
-		{
-			name: 'CONTACT',
-			href: '/contact'
 		},
 	];
 

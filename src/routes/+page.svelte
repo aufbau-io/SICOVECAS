@@ -1,15 +1,15 @@
 <script>
 
-	import www from '$lib/images/icons/www.svg';
+	import logo from '$lib/images/logo.svg';
 </script>
 
 <section>
 	<div class="main">
-		<!-- <div class="icons">
-			<img src={www} alt="www" class="icon" />
-		</div> -->
-		<h1>SICOVECAS</h1>
-		<p style="padding:20px;background:var(--black);z-index:10;">Sicovecas' art, play with elements of water, jugs and wild plants,
+		<div class="icons">
+			<img src={logo} alt="logo" class="icon" />
+		</div>
+		<!-- <h1>SICOVECAS</h1> -->
+		<p style="padding:20px;background:var(--black);z-index:10;">Sicovecas' art plays with elements of water, jugs and wild plants,
 			representing his experience of growing up in Jogja - a city known
 			for being colourful, full of overlap, but still in harmony.
 			His characteristic abstract patterns reflect the movement and
@@ -50,7 +50,7 @@
 		padding:  20px 20px;
 	}
 
-	.icons {
+	/* .icons {
 		display: flex;
 		flex-flow: row;
 		padding-bottom: 10px;
@@ -59,7 +59,7 @@
 	.icon {
 		height: 60px;
 		width: 100%;
-	}
+	} */
 
 
 	@media only screen and (max-width: 768px) {
