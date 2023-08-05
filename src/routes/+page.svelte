@@ -12,7 +12,8 @@
 		<div class="images">
 			<img src="obi.jpg" alt="obi">
 			{#if $screenType != 1}
-			<img src="main.jpg" alt="chair + painting">
+			<!-- <img src="main.jpg" alt="chair + painting"> -->
+			<img style="transform: rotate(180deg);" src="obi.jpg" alt="obi">
 			{/if}
 		</div>
 		<p>son of the sun</p>
@@ -42,13 +43,13 @@ section {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
-		gap: 20px;
+		gap: 15px;
 		z-index: -1;
 
 		background: var(--background);
 		color: var(--primary);
 		border: var(--border);
-		padding:  30px 20px 20px 20px;
+		padding:  20px 20px 15px 20px;
 	}
 
 	.images {
@@ -75,8 +76,8 @@ section {
 			position: absolute;
 			bottom: 20px;
 			width: calc(100% - 40px);
-			gap: 20px;
-			padding:  20px 20px;
+			gap: 15px;
+			padding:  20px 20px 15px 20px;
 		}
 
 		.images img {
