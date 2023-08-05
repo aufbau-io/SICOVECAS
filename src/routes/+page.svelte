@@ -10,9 +10,9 @@
 	</div> -->
 		<!-- <h1>SICOVECAS<br>-</h1> -->
 		<div class="images">
-			<img src="obi.jpg">
+			<img src="obi.jpg" alt="obi">
 			{#if $screenType != 1}
-			<img src="main.jpg">
+			<img src="main.jpg" alt="chair + painting">
 			{/if}
 		</div>
 		<p>son of the sun</p>
