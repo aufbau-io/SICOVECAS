@@ -7,8 +7,7 @@
   <!-- <div class="icons">
 		<img src={www} alt="graph" class="icon" />
 	</div> -->
-		<h1>PROJECTS<br>-</h1>
-		<p>Words</p>
+		<p>PROJECTS</p>
 	</div>
 </section>
 
@@ -56,10 +55,10 @@ section {
 	@media only screen and (max-width: 768px) {
 		.main {
 			position: absolute;
-			bottom: 5%;
-			width: 90vw;
-			gap: 24px;
-			padding:  40px 24px;
+			bottom: 20px;
+			width: calc(100% - 40px);
+			gap: 10px;
+			padding:  20px 20px;
 		}
 	}
 </style>

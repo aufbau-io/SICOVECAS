@@ -95,7 +95,7 @@ h6 {
 }
 
 h1 {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 400;
 }
 
@@ -107,6 +107,11 @@ a {
 	text-transform: none;
 	letter-spacing: 0.1em;
 	font-size: 14px;
+}
+
+p {
+	padding: 10px;
+	background: var(--black);
 }
 
 p {

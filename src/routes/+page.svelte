@@ -1,15 +1,23 @@
 <script>
-	import www from '$lib/images/icons/www.svg';
+	import { screenType } from '$lib/store/store';
 </script>
 
 <section>
+
 <div class="main">
   <!-- <div class="icons">
 		<img src={www} alt="graph" class="icon" />
 	</div> -->
 		<!-- <h1>SICOVECAS<br>-</h1> -->
-		<p>Son of the sun</p>
+		<div class="images">
+			<img src="obi.jpg">
+			{#if $screenType != 1}
+			<img src="main.jpg">
+			{/if}
+		</div>
+		<p>son of the sun</p>
 	</div>
+	<!-- <p>Son of the sun</p> -->
 </section>
 
 <style>
@@ -34,13 +42,22 @@ section {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
-		gap: 10px;
+		gap: 20px;
+		z-index: -1;
 
 		background: var(--background);
 		color: var(--primary);
 		border: var(--border);
-		padding:  40px 48px;
+		padding:  40px 20px 20px 20px;
 	}
+
+	.images {
+		display: flex;
+	}
+
+	.images img {
+			width: 50%;
+		}
 
   .icons {
 		display: flex;
@@ -56,10 +73,14 @@ section {
 	@media only screen and (max-width: 768px) {
 		.main {
 			position: absolute;
-			bottom: 5%;
-			width: 90vw;
-			gap: 24px;
-			padding:  40px 24px;
+			bottom: 20px;
+			width: calc(100% - 40px);
+			gap: 20px;
+			padding:  20px 20px;
+		}
+
+		.images img {
+			width: 100%;
 		}
 	}
 </style>
