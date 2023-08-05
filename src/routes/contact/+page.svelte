@@ -1,13 +1,13 @@
 <script>
-	import chat from '$lib/images/icons/chat.svg';
+	import www from '$lib/images/icons/www.svg';
 </script>
 
 <section>
 <div class="main">
   <div class="icons">
-		<img src={chat} alt="graph" class="icon" />
+		<img src={www} alt="graph" class="icon" />
 	</div>
-		<h1>PAGE 1<br>-</h1>
+		<h1>CONTACT<br>-</h1>
 		<p>Words</p>
 	</div>
 </section>

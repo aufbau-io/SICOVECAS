@@ -1,13 +1,13 @@
 <script>
-	import graph from '$lib/images/icons/graph.svg';
+	import www from '$lib/images/icons/www.svg';
 </script>
 
 <section>
 <div class="main">
   <div class="icons">
-		<img src={graph} alt="graph" class="icon" />
+		<img src={www} alt="graph" class="icon" />
 	</div>
-		<h1>PAGE 2<br>-</h1>
+		<h1>WALL<br>-</h1>
 		<p>Words</p>
 	</div>
 </section>
@@ -27,6 +27,7 @@ section {
 
   overflow: auto;
 }
+
 .main {
 		max-width: 800px;
 

@@ -39,7 +39,7 @@
 </script>
 
 <svelte:head>
-	<title>AUFBAU</title>
+	<title>SICOVECAS</title>
 	<meta name="description" content="AUFBAU DIGITAL" />
 </svelte:head>
 

@@ -7,21 +7,30 @@
 
 	import mail from '$lib/images/icons/mail.svg';
 	import insta from '$lib/images/icons/insta.svg';
-	import www from '$lib/images/icons/www.svg';
+	import phone from '$lib/images/icons/phone.svg';
+	import facebook from '$lib/images/icons/facebook.svg';
 
 	// stub data out
 	const navItems = [
 		{
-			name: 'AUFBAU',
+			name: 'SICOVECAS',
 			href: '/'
 		},
 		{
-			name: 'PAGE 1',
-			href: '/page1'
+			name: 'PROJECTS',
+			href: '/projects'
 		},
 		{
-			name: 'PAGE 2',
-			href: '/page2'
+			name: 'WALL',
+			href: '/wall'
+		},
+		{
+			name: 'SHOP',
+			href: '/shop'
+		},
+		{
+			name: 'CONTACT',
+			href: '/contact'
 		},
 	];
 
@@ -53,15 +62,20 @@
 	</div> -->
 
 	<div class="icons">
-		<a href="mailto: dan@aufbau.io">
+		<a href="mailto: sicovecas@gmail.com">
 			<img src={mail} alt="mail" class="icon" />
 		</a>
-		<a href="https://www.instagram.com/dn.niels" target="_blank" rel="noreferrer">
+		<a href="https://www.facebook.com/sicoveca" target="_blank" rel="noreferrer">
+			<img src={facebook} alt="facebook" class="icon" />
+		</a>
+
+		<a href="https://www.instagram.com/sicovecas/" target="_blank" rel="noreferrer">
 			<img src={insta} alt="instagram" class="icon" />
 		</a>
-		<a href="https://www.aufbau.io" target="_blank" rel="noreferrer">
-			<img src={www} alt="instagram" class="icon" />
+		<a href="https://api.whatsapp.com/send?phone=628562979022&text=Hi%2C%20I%20got%20your%20WhatsApp%20information%20from%20your%20website." target="_blank" rel="noreferrer">
+			<img src={phone} alt="whatsapp" class="icon" />
 		</a>
+
 	</div>
 
 </main>

@@ -1,15 +1,20 @@
 <script>
 
-	import www from '$lib/images/icons/www2.svg';
+	import www from '$lib/images/icons/www.svg';
 </script>
 
 <section>
 	<div class="main">
-		<div class="icons">
+		<!-- <div class="icons">
 			<img src={www} alt="www" class="icon" />
-		</div>
-		<h1>AUFBAU<br>-</h1>
-		<p>words</p>
+		</div> -->
+		<h1>SICOVECAS</h1>
+		<p style="padding:20px;background:var(--black);z-index:10;">Sicovecas' art, play with elements of water, jugs and wild plants,
+			representing his experience of growing up in Jogja - a city known
+			for being colourful, full of overlap, but still in harmony.
+			His characteristic abstract patterns reflect the movement and
+			the energy of his hometown.
+			</p>
 	</div>
 	
 </section>
@@ -42,13 +47,13 @@
 		background: var(--background);
 		color: var(--primary);
 		border: var(--border);
-		padding:  40px 48px;
+		padding:  20px 20px;
 	}
 
 	.icons {
 		display: flex;
 		flex-flow: row;
-		padding-bottom: 16px;
+		padding-bottom: 10px;
 	}
 
 	.icon {
@@ -59,7 +64,7 @@
 
 	@media only screen and (max-width: 768px) {
 		.main {
-			position: fixed;
+			position: absolute;
 			bottom: 5%;
 			z-index: -1;
 			width: 90vw;
