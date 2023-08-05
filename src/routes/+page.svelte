@@ -48,7 +48,7 @@ section {
 		background: var(--background);
 		color: var(--primary);
 		border: var(--border);
-		padding:  40px 20px 20px 20px;
+		padding:  30px 20px 20px 20px;
 	}
 
 	.images {
