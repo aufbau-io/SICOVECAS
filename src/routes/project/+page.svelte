@@ -7,7 +7,7 @@
   <!-- <div class="icons">
 		<img src={www} alt="graph" class="icon" />
 	</div> -->
-		<p>PROJECTS</p>
+		<p>PROJECT</p>
 	</div>
 </section>
 
