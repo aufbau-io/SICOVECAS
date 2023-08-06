@@ -18,7 +18,7 @@
 		},
 		{
 			name: 'PROJECT',
-			href: '/projecs'
+			href: '/project'
 		},
 		{
 			name: 'WALL',
