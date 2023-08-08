@@ -92,7 +92,7 @@
 				uniform vec2 mouse;
 
 				void main() {
-					vec2 position = vUv * 4.0;
+					vec2 position = vUv * 3.0;
 					float wave = 0.5 * (tan(position.x + time * 0.1 + 10.0 ) + mouse.x + sin(position.y + time +  mouse.y));
 					vec3 color = mix(color1, color2, wave);
 					color = mix(color, color3, wave * wave);
