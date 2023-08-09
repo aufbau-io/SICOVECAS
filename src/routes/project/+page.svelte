@@ -4,7 +4,7 @@
 
 <section>
 <div class="main">
-	<section class="team">
+	<!-- <section class="team">
 		{#each data.employees as employee}
 			<figure>
 				<img src={employee.photo.url} alt={employee.photo.description} />
@@ -16,7 +16,7 @@
 				</figcaption>
 			</figure>
 		{/each}
-	</section>
+	</section> -->
 		<p>PROJECT</p>
 	</div>
 </section>
