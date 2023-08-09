@@ -8,7 +8,8 @@ const query = `
       homeSubTitle
       homePhoto {
         url(transform: {
-          format: AVIF
+          format: AVIF,
+          width: 360
         })
       }
     }
