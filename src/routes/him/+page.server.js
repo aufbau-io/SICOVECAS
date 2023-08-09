@@ -24,8 +24,7 @@ export async function load() {
 	const { items } = data.essenceCollection;
 
 	// replace \n with <br> tags
-	// items[0].himText = items[0].himText.replace(/\n/g, '<br/>');
-	// test
+	items[0].himText = items[0].himText.replace(/\n/g, '<br/>');
 
 	return items[0];
 }
