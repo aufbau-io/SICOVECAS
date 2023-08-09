@@ -1,24 +1,20 @@
 <script>
 	import { screenType } from '$lib/store/store';
+
+	export let data;
 </script>
 
 <section>
 
 <div class="main">
-  <!-- <div class="icons">
-		<img src={www} alt="graph" class="icon" />
-	</div> -->
-		<!-- <h1>SICOVECAS<br>-</h1> -->
 		<div class="images">
-			<img src="obi.jpg" alt="obi">
+			<img src={data.homePhoto.url} alt={data.name}>
 			{#if $screenType != 1}
-			<!-- <img src="main.jpg" alt="chair + painting"> -->
-			<img style="transform: rotate(180deg);" src="obi.jpg" alt="obi">
+			<img src={data.homePhoto.url} alt={data.name}  style="transform: rotate(180deg);" >
 			{/if}
 		</div>
-		<p>son of the sun</p>
+		<p>{data.homeSubTitle}</p>
 	</div>
-	<!-- <p>Son of the sun</p> -->
 </section>
 
 <style>
@@ -59,17 +55,6 @@ section {
 	.images img {
 			width: 50%;
 		}
-
-  .icons {
-		display: flex;
-		flex-flow: row;
-		padding-bottom: 10px;
-	}
-
-	.icon {
-		height: 60px;
-		width: 100%;
-	}
 
 	@media only screen and (max-width: 768px) {
 		.main {

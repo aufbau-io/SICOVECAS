@@ -1,20 +1,24 @@
 <script>
-	import www from '$lib/images/icons/www.svg';
+	export let data;
+
+	const returnLineBreaks = (text) => {
+		if(text.includes('<br/>')) {
+			let out = text.split('<br/>');
+			console.log(out)
+			return out;
+		} else {
+			return [text];
+		}
+	}
 </script>
 
 <section>
 <div class="main">
-  <!-- <div class="icons">
-		<img src={www} alt="graph" class="icon" />
-	</div> -->
-		<!-- <h1>HIM<br>-</h1> -->
-		<!-- <div style="display: flex;">
-			<img src="obi.jpg" style="width: 50%;">
-			<img src="main.jpg" style="width: 50%;">
-		</div> -->
-		<p>Sicovecas is a Yogyakartan mural and graffiti artist who found his identity as ‘As I See’ (SIC) in 2006. His pieces play with elements of water, jugs, and wild plants, representing his experience of growing up in Jogja — a city known for being colourful and full of overlap, but somehow still in harmony. His characteristic abstract patterns reflect the movement and the energy of his hometown.
-			<br><br>
-			Although often a subtle feature in his work, water is central as it represents the flow of dissatisfaction and desire to keep digging for the most current, authentic version of himself.</p>
+	<p class="lineBreakStyle">
+		{#each returnLineBreaks(data.himText) as textPart}
+			<span>{textPart}</span>
+		{/each}
+	</p>
 	</div>
 </section>
 
@@ -34,6 +38,12 @@ section {
   overflow: auto;
 }
 
+.lineBreakStyle {
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 10px;
+	}
+
 .main {
 		max-width: 800px;
 
@@ -48,18 +58,7 @@ section {
 		padding:  20px;
 		z-index:-1;
 	}
-
-  .icons {
-		display: flex;
-		flex-flow: row;
-		padding-bottom: 10px;
-	}
-
-	.icon {
-		height: 60px;
-		width: 100%;
-	}
-
+	
 	@media only screen and (max-width: 768px) {
 		.main {
 			position: absolute;

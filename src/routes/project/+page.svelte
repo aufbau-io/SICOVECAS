@@ -51,17 +51,6 @@ section {
 		padding:  20px;
 	}
 
-  .icons {
-		display: flex;
-		flex-flow: row;
-		padding-bottom: 10px;
-	}
-
-	.icon {
-		height: 60px;
-		width: 100%;
-	}
-
 	@media only screen and (max-width: 768px) {
 		.main {
 			position: absolute;
