@@ -46,6 +46,10 @@
 	font-weight: 400;
 }
 
+body {
+	background: var(--background);
+}
+
 /* body {
 	margin: 0;
 	background-attachment: fixed;
@@ -96,7 +100,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-pre {
+/* pre {
 	font-size: 16px;
 	font-family: var(--font-mono);
 	background-color: rgba(255, 255, 255, 0.45);
@@ -105,7 +109,7 @@ pre {
 	padding: 0.5em;
 	overflow-x: auto;
 	color: var(--color-text);
-}
+} */
 
 input,
 button {
