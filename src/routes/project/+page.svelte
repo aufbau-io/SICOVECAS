@@ -1,12 +1,22 @@
 <script>
-	import www from '$lib/images/icons/www.svg';
+	export let data;
 </script>
 
 <section>
 <div class="main">
-  <!-- <div class="icons">
-		<img src={www} alt="graph" class="icon" />
-	</div> -->
+	<section class="team">
+		{#each data.employees as employee}
+			<figure>
+				<img src={employee.photo.url} alt={employee.photo.description} />
+				<figcaption>
+					<p><strong>{employee.name}</strong> — {employee.jobTitle}</p>
+					<p>
+						<em>Joined in {employee.startDate} </em>
+					</p>
+				</figcaption>
+			</figure>
+		{/each}
+	</section>
 		<p>PROJECT</p>
 	</div>
 </section>
