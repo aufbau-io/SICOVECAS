@@ -19,7 +19,7 @@
 			>{navItem.name}</a
 		>
 	{/each}
-	
+
 </nav>
 
 <style>
@@ -44,7 +44,7 @@
 	}
 
 	nav a.active {
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 	.active,

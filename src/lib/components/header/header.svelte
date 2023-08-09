@@ -50,8 +50,6 @@
 			<img src="icons/facebook.svg" alt="facebook" class="icon" />
 		</a>
 
-
-
 	</div>
 
 </main>
@@ -73,10 +71,6 @@
 		padding: 20px;
 		font-size: 12px;
 		height: calc(2 * var(--margin));
-	}
-
-	p, a {
-		font-weight: 600;
 	}
 
 	.icons {

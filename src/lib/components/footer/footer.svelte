@@ -29,10 +29,6 @@
 		justify-content: space-between;
 	}
 
-	p, a {
-		font-weight: 600;
-	}
-
 	.logo {
 		height: 32px;
 	}

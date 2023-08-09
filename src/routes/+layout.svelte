@@ -40,7 +40,28 @@
 
 <svelte:head>
 	<title>SICOVECAS</title>
-	<meta name="description" content="AUFBAU DIGITAL" />
+	<meta name="description" content="ARTIST // YKT // SON OF THE SUN" />
+
+	<link
+	rel="preload"
+	href="/fonts/NB-Architekt-Pro-Light.woff"
+	as="font"
+	type="font/woff"
+	crossorigin="anonymous"
+/>
+
+<link
+	rel="preload"
+	href="/fonts/NB-Architekt-Pro-Bold.woff"
+	as="font"
+	type="font/woff"
+	crossorigin="anonymous"
+/>
+
+<link rel="preload" href="icons/fabebook.svg" as="image" type="image/svg">
+<link rel="preload" href="icons/phone.svg" as="image" type="image/svg">
+<link rel="preload" href="icons/insta.svg" as="image"  type="image/svg">
+<link rel="preload" href="icons/mail.svg" as="image"  type="image/svg">
 </svelte:head>
 
 <svelte:component this={Geometry} />
