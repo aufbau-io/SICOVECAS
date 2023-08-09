@@ -176,6 +176,5 @@
 	.geometry {
 		position: absolute;
 		overflow: hidden;
-		z-index: -1;
 	}
 </style>

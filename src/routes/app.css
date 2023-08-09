@@ -46,9 +46,9 @@
 	font-weight: 400;
 }
 
-/* body {
+html {
 	background: var(--background);
-} */
+}
 
 /* body {
 	margin: 0;

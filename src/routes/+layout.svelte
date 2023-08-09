@@ -91,6 +91,7 @@
 		display: flex;
 		flex-direction: column;
 		height: 100dvh;
+
 	}
 	
 	header {
@@ -111,5 +112,6 @@
 		/* padding: calc(1 * var(--margin)); */
 		width: 100%;
 		height: 100%;
+		z-index: 1;
 	}
 </style>
