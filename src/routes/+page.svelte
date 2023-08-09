@@ -34,7 +34,8 @@ section {
 }
 
 .main {
-		max-width: 800px;
+		width: 800px;
+		max-width: calc(100% - 40px);
 
 		display: flex;
 		flex-flow: column nowrap;
