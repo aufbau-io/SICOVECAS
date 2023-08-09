@@ -40,7 +40,7 @@
 
 <svelte:head>
 	<title>SICOVECAS</title>
-	<meta name="description" content="ARTIST // YKT // SON OF THE SUN" />
+	<meta name="description" content="YKT // SON OF THE SUN" />
 
 	<link
 	rel="preload"
