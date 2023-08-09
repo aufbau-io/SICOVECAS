@@ -62,6 +62,8 @@
 <link rel="preload" href="icons/phone.svg" as="image">
 <link rel="preload" href="icons/insta.svg" as="image">
 <link rel="preload" href="icons/mail.svg" as="image">
+
+<link rel="preload" href="img/logo.svg" as="image">
 </svelte:head>
 
 <svelte:component this={Geometry} />
