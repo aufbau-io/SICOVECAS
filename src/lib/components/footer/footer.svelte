@@ -1,12 +1,9 @@
 <script>
-	import logo from '$lib/images/logo.svg';
 </script>
 
 <footer>
 	<a href="https://aufbau.io" target="_blank" rel="noreferrer">EIN AUFBAU DING</a>
-	<!-- <a href="https://www.websitecarbon.com/website/aufbau-io/" target="_blank" rel="noreferrer">0.03G CO2 / VISIT</a> -->
-	<img src={logo} alt="logo" class="logo" />
-	<!-- <p class="">COPYRIGHT 2022</p> -->
+	<img src="img/logo.svg" alt="logo" class="logo" />
 </footer>
 
 <style>
