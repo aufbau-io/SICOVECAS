@@ -58,10 +58,10 @@
 	crossorigin="anonymous"
 />
 
-<link rel="preload" href="icons/facebook.svg" as="image" type="image/svg">
-<link rel="preload" href="icons/phone.svg" as="image" type="image/svg">
-<link rel="preload" href="icons/insta.svg" as="image"  type="image/svg">
-<link rel="preload" href="icons/mail.svg" as="image"  type="image/svg">
+<link rel="preload" href="icons/facebook.svg" as="image">
+<link rel="preload" href="icons/phone.svg" as="image">
+<link rel="preload" href="icons/insta.svg" as="image">
+<link rel="preload" href="icons/mail.svg" as="image">
 </svelte:head>
 
 <svelte:component this={Geometry} />
