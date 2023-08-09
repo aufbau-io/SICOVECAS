@@ -5,11 +5,6 @@
 	// import { page } from '$app/stores';
 	// import { goto } from '$app/navigation';
 
-	import mail from '$lib/images/icons/mail.svg';
-	import insta from '$lib/images/icons/insta.svg';
-	import phone from '$lib/images/icons/phone.svg';
-	import facebook from '$lib/images/icons/facebook.svg';
-
 	// stub data out
 	const navItems = [
 		{
@@ -33,48 +28,29 @@
 			href: '/him'
 		},
 	];
-
-	let toggleDarkMode = () => {
-		darkMode.set(!$darkMode);
-		document.querySelector(':root').classList.toggle('dark-mode');
-
-	// 		if ($page.url.pathname == '/') {
-	// goto(`/art`, { replaceState: true }) 
-	// 		}
-		};
 </script>
 
 <header>
 	<main>
 
-		<!-- {#if $screenType == 3}
-		<div class="darkMode">
-			<p>DANIEL HUMPHRIES</p>
-		</div>
-		{/if} -->
-
 		<Nav {navItems} />
 
-	<!-- <div on:click={() => toggleDarkMode()} on:keydown={() => toggleDarkMode()} class="darkMode right">
-		<p class:selected={$darkMode == false}>ONLINE</p>
-		<p class="selected">/</p>
-		<p class:selected={$darkMode == true}>OFFLINE</p>
-	</div> -->
-
 	<div class="icons">
+		<a href="https://api.whatsapp.com/send?phone=628562979022&text=Hi%2C%20I%20got%20your%20WhatsApp%20information%20from%20your%20website." target="_blank" rel="noreferrer">
+			<img src="icons/phone.svg" alt="whatsapp" class="icon" />
+		</a>
+		<a href="https://www.instagram.com/sicovecas/" target="_blank" rel="noreferrer">
+			<img src="icons/insta.svg" alt="instagram" class="icon" />
+		</a>
+
 		<a href="mailto: sicovecas@gmail.com">
-			<img src={mail} alt="mail" class="icon" />
+			<img src="icons/mail.svg" alt="mail" class="icon" />
 		</a>
 		<a href="https://www.facebook.com/sicoveca" target="_blank" rel="noreferrer">
-			<img src={facebook} alt="facebook" class="icon" />
+			<img src="icons/facebook.svg" alt="facebook" class="icon" />
 		</a>
 
-		<a href="https://www.instagram.com/sicovecas/" target="_blank" rel="noreferrer">
-			<img src={insta} alt="instagram" class="icon" />
-		</a>
-		<a href="https://api.whatsapp.com/send?phone=628562979022&text=Hi%2C%20I%20got%20your%20WhatsApp%20information%20from%20your%20website." target="_blank" rel="noreferrer">
-			<img src={phone} alt="whatsapp" class="icon" />
-		</a>
+
 
 	</div>
 
@@ -112,7 +88,6 @@
 		border: var(--border);
 	}
 
-
 	.icon {
 		height: 20px;
 		width: 20px;
@@ -125,42 +100,4 @@
 		opacity:.5;
 		}
 
-	.darkMode {
-		background: var(--background);
-		color: var(--primary);
-		border: var(--border);
-		display: flex;
-		gap: 12px;
-		padding: 6px 12px;
-		cursor: pointer;
-	}
-
-	.left {
-		justify-content: start;
-	}
-
-	.right {
-		justify-content: end;
-	}
-
-	.app_link {
-		opacity: 0.3;
-	}
-
-	.darkMode p {
-		font-size: 13px;
-		color: inherit;
-	}
-
- 	.right p {
-		opacity: .5;
-	}
-
-	.darkMode p.selected {
-		opacity: 1;
-	}
-
-	@media only screen and (max-width: 768px) {
-
-	}
 </style>

@@ -19,8 +19,7 @@
 			>{navItem.name}</a
 		>
 	{/each}
-
-	<!-- <a href="https://aufbau.io" target="_blank">EIN AUFBAU DING</a> -->
+	
 </nav>
 
 <style>

@@ -59,7 +59,7 @@
 				vec2 ripple = position;
 				float dist = sqrt(dot(ripple, ripple));
 				dist += sin(4.0 * atan(ripple.y, ripple.x + 0.1) - time * 0.1); // add circular distortion
-				float wave = 0.5 * (1.0 + sin(dist * 10.0 - time * 0.5));
+				float wave = 0.5 * (1.0 + sin(dist * 10.0 - time * 0.5)) ;
 				vec3 color = mix(color1, color2, wave);
 				color = mix(color, color3, wave * wave);
 				gl_FragColor = vec4(color, 1.0);
@@ -93,7 +93,7 @@
 
 				void main() {
 					vec2 position = vUv * 3.0;
-					float wave = 0.5 * (tan(position.x + time * 0.1 + 10.0 ) + mouse.x + sin(position.y + time +  mouse.y));
+					float wave = 0.5 * (tan(position.x + time * 0.1 + 10.0 ) + sin(position.y + time));
 					vec3 color = mix(color1, color2, wave);
 					color = mix(color, color3, wave * wave);
 					gl_FragColor = vec4(color, 1.0);
