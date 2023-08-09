@@ -1,12 +1,8 @@
 <script>
-	import www from '$lib/images/icons/www.svg';
 </script>
 
 <section>
 <div class="main">
-  <!-- <div class="icons">
-		<img src={www} alt="graph" class="icon" />
-	</div> -->
 	<p>SHOP</p>
 	</div>
 </section>
