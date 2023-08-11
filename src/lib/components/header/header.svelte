@@ -96,7 +96,7 @@
 
 	 @media only screen and (max-width: 768px) {
 		.icons {
-			padding: 10px 10px;
+			padding: 10px 15px;
 		}
 	}
 
