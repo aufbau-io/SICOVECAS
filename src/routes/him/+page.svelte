@@ -45,7 +45,7 @@ section {
 	}
 
 .main {
-		max-width: 800px;
+		max-width: 860px;
 
 		display: flex;
 		flex-flow: column nowrap;
@@ -56,14 +56,18 @@ section {
 		color: var(--primary);
 		border: var(--border);
 		padding:  20px;
-		z-index:-1;
 	}
 	
 	@media only screen and (max-width: 768px) {
 		.main {
 			position: absolute;
 			bottom: 20px;
-			width: 90vw;
+			width: calc(100% - 40px);
+			max-height: calc(100% - 100px);
+		}
+
+		.main p {
+			overflow-y: scroll;
 		}
 	}
 </style>

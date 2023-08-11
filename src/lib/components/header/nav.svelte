@@ -30,6 +30,7 @@
 		background: var(--background);
 		color: var(--primary);
 		border: var(--border);
+		z-index: 1;
 	}
 	nav a,
 	nav p {
