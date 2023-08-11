@@ -76,7 +76,7 @@
 	.icons {
 		display: flex;
 		gap: 15px;
-		padding: 10px 15px;
+		padding: 7px 10px;
 		justify-content: space-evenly;
 		background: var(--background);
 		border: var(--border);
@@ -93,5 +93,11 @@
 	.icon:hover{
 		opacity:.5;
 		}
+
+	 @media only screen and (max-width: 768px) {
+		main {
+			padding: 10px 15px;
+		}
+	}
 
 </style>
