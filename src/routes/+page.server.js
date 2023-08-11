@@ -12,6 +12,20 @@ const query = `
           width: 1440
         })
       }
+      himText
+    }
+  },
+  employeeCollection{
+    items{
+      name,
+      jobTitle
+      startDate
+      photo {
+        url(transform: {
+          format: AVIF
+        })
+        description
+      }
     }
   }
 }

@@ -2,6 +2,7 @@
 	import { screenType } from '$lib/store/store';
 
 	export let data;
+		console.log(data);
 </script>
 
 <section>

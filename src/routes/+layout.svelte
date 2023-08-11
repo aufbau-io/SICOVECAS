@@ -39,8 +39,12 @@
 </script>
 
 <svelte:head>
-	<title>SICOVECAS</title>
-	<meta name="description" content="YKT // SON OF THE SUN" />
+	<title>SICOVECAS // Son Of The Sun</title>
+	<meta name="description" content="Sicovecas' art, play with elements of water, jugs and wild plants,
+	representing his experience of growing up in Jogja- a city known
+	for being colourful and full of overlap but still in harmony.
+	His characteristic abstract patterns reflect the movement and
+	the energy of his hometown." />
 
 	<link
 	rel="preload"
