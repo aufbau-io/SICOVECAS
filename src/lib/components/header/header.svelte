@@ -16,8 +16,8 @@
 			href: '/project'
 		},
 		{
-			name: 'WALL',
-			href: '/wall'
+			name: 'WALLS',
+			href: '/walls'
 		},
 		{
 			name: 'SHOP',
