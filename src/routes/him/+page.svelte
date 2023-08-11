@@ -63,7 +63,7 @@ section {
 			position: absolute;
 			bottom: 20px;
 			width: calc(100% - 40px);
-			max-height: calc(100% - 230px);
+			max-height: calc(100% - 240px);
 		}
 
 		.main p {

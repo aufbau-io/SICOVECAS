@@ -14,11 +14,14 @@
 
 <nav>
 
+	<!-- <a class="">SICOVECAS</a> -->
+
 	{#each navItems as navItem}
 		<a href={navItem.href} class="" class:active={navItem.href === $page.url.pathname}
 			>{navItem.name}</a
 		>
 	{/each}
+
 
 </nav>
 
@@ -31,6 +34,7 @@
 		color: var(--primary);
 		border: var(--border);
 		z-index: 1;
+		padding: 5px 0;
 	}
 	nav a,
 	nav p {
