@@ -35,7 +35,7 @@ section {
 
 
 .main {
-		width: 800px;
+		width: 820px;
 		max-width: calc(100% - 40px);
 
 		display: flex;

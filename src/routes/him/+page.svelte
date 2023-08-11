@@ -47,7 +47,7 @@ section {
 	}
 
 .main {
-		max-width: 860px;
+		max-width: 820px;
 
 		display: flex;
 		flex-flow: column nowrap;
