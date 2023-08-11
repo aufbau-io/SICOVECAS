@@ -1,4 +1,6 @@
 <script>
+	import { screenType } from '$lib/store/store';
+	
 	export let data;
 
 	const returnLineBreaks = (text) => {
@@ -11,6 +13,10 @@
 		}
 	}
 </script>
+
+{#if $screenType == 1}
+	<img src="img/logo.svg" alt="logo"/>
+{/if}
 
 <section>
 <div class="main">
@@ -36,6 +42,13 @@ section {
   text-align: center;
 
   overflow: auto;
+}
+
+img {
+	position: absolute;
+	top: 160px;
+	right: 40px;
+	width: calc(100% - 180px);
 }
 
 .lineBreakStyle {
