@@ -6,8 +6,7 @@
 </script>
 
 <section>
-
-<div class="main">
+	<div class="main">
 		<div class="images">
 			<img src={data.homePhoto.url} alt={data.name}>
 			{#if $screenType != 1}
@@ -33,6 +32,7 @@ section {
 
   overflow: auto;
 }
+
 
 .main {
 		width: 800px;

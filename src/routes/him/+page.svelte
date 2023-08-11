@@ -14,10 +14,6 @@
 	}
 </script>
 
-{#if $screenType == 1}
-	<img src="img/logo.svg" alt="logo"/>
-{/if}
-
 <section>
 <div class="main">
 	<p class="lineBreakStyle">
@@ -42,13 +38,6 @@ section {
   text-align: center;
 
   overflow: auto;
-}
-
-img {
-	position: absolute;
-	top: 160px;
-	right: 40px;
-	width: calc(100% - 180px);
 }
 
 .lineBreakStyle {
