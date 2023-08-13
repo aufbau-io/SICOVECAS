@@ -35,6 +35,8 @@
 		// handle resize
 		window.addEventListener('resize', () => {
 			if (window.innerWidth < 768) screenType.set(1);
+			else if (window.innerWidth < 840) screenType.set(2);
+			else screenType.set(3);
 		});
 
 		if (window.location !== window.parent.location) isIframe.set(true);

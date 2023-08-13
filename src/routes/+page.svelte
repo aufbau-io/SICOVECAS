@@ -10,34 +10,27 @@
 
   let imgHeight, imgWidth
 
-  if ($screenType == 1) {
-    imgHeight = 'auto';
-    imgWidth = '100%';
-  } else if (window.innerWidth > 840) {
-    imgHeight = '389px';
-    imgWidth = '100%';
-  } else if (window.innerWidth < 768) {
-    imgHeight = 'auto';
-    imgWidth = '100%';
-  } else {
-    let width = (window.innerWidth - 80) / 2;
-    imgHeight = `${width}px`;
-    imgWidth = '50%';
-  }
-
-  // handle resize
-  window.addEventListener('resize', () => {
+  let manageImageSize = () => {
     if ($screenType == 1) {
       imgHeight = 'auto';
       imgWidth = '100%';
     } else if (window.innerWidth > 840) {
       imgHeight = '389px';
       imgWidth = '100%';
+    } else if (window.innerWidth < 768) {
+      imgHeight = 'auto';
+      imgWidth = '100%';
     } else {
       let width = (window.innerWidth - 80) / 2;
       imgHeight = `${width}px`;
       imgWidth = '50%';
     }
+  }
+
+  manageImageSize();
+  
+  window.addEventListener('resize', () => {
+    manageImageSize();
   });
   
 </script>
