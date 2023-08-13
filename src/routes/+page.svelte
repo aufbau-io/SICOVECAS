@@ -1,17 +1,65 @@
 <script>
 	import { screenType } from '$lib/store/store';
+	import LazyImage from '$lib/components/common/LazyImage.svelte';
 
 	export let data;
-		console.log(data);
+
+	$: isMobileLayout = ($screenType == 1 || window.innerWidth < 768);
+	// $: imgHeight = isMobileLayout ? 'auto' : '389px';
+	// $: imgWidth = isMobileLayout ? '100%' : '50%';
+
+  let imgHeight, imgWidth
+
+  if ($screenType == 1) {
+    imgHeight = 'auto';
+    imgWidth = '100%';
+  } else if (window.innerWidth > 840) {
+    imgHeight = '389px';
+    imgWidth = '100%';
+  } else if (window.innerWidth < 768) {
+    imgHeight = 'auto';
+    imgWidth = '100%';
+  } else {
+    let width = (window.innerWidth - 80) / 2;
+    imgHeight = `${width}px`;
+    imgWidth = '50%';
+  }
+
+  // handle resize
+  window.addEventListener('resize', () => {
+    if ($screenType == 1) {
+      imgHeight = 'auto';
+      imgWidth = '100%';
+    } else if (window.innerWidth > 840) {
+      imgHeight = '389px';
+      imgWidth = '100%';
+    } else {
+      let width = (window.innerWidth - 80) / 2;
+      imgHeight = `${width}px`;
+      imgWidth = '50%';
+    }
+  });
+  
 </script>
 
 <section>
 	<div class="main">
 		<div class="images">
-			<img src={data.homePhoto.url} alt={data.name}>
-			{#if $screenType != 1}
-			<img src={data.homePhoto.url} alt={data.name}  style="transform: rotate(180deg);" >
-			{/if}
+      <LazyImage
+        src={data.homePhoto.url} 
+        alt={data.name}
+        width={imgWidth}
+				height={imgHeight}
+      />
+      {#if !isMobileLayout}
+      <LazyImage 
+        src={data.homePhoto.url} 
+        alt={data.name}
+        width={imgWidth}
+        height={imgHeight}
+        customStyles="transform: rotate(180deg);"
+      />
+      {/if}
 		</div>
 		<p>{data.homeSubTitle}</p>
 	</div>
@@ -50,13 +98,16 @@ section {
 		padding:  20px 20px 15px 20px;
 	}
 
-	.images {
-		display: flex;
-	}
+  .images {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
 
-	.images img {
-			width: 50%;
-		}
+  .images LazyImage {
+    flex: 0 0 auto;
+    aspect-ratio: 1/1; /* CSS4: Makes sure the height is equal to the width */
+  }
 
 	@media only screen and (max-width: 768px) {
 		.main {
@@ -67,8 +118,12 @@ section {
 			padding:  20px 20px 15px 20px;
 		}
 
-		.images img {
-			width: 100%;
-		}
+    .images {
+      flex-direction: column;
+    }
+
+    .images LazyImage {
+      width: 100%;
+    }
 	}
 </style>
