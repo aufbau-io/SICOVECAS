@@ -31,43 +31,51 @@ section {
   text-align: center;
 
 	overflow: auto;
-	/* background: var(--accent-50); */
+	/* background: var(--background); */
 
 }
 
 .main {
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
 		justify-content: center;
 
 		color: var(--primary);
-		background: var(--primary);
+
+		/* padding: 20px; */
+		max-width: 800px;
 
 	}
 
 	figure {
-		border-left: solid 1px var(--background);
+		border-left: solid 1px var(--black);
+		border-right: solid 1px var(--black);
+		background: var(--background);
+		width: 400px;
+		height: 500px;
 	}
 
 	img {
 		object-fit: cover;
-		width: 100vw;
+		width: 100%;
 		height: 400px;
-		background: var(--background);
+		background: var(--black);
 
 		padding: 1px 0px;
 	}
 
 	p {
-		background: var(--primary);
-		color: var(--black);
+		background: var(--background);
+		color: var(--primary);
 	}
 
 	@media only screen and (max-width: 768px) {
-		/* .main {
-			position: absolute;
-			bottom: 20px;
-			width: calc(100% - 40px);
-		} */
+		figure {
+			width: 100%;
+		}
+
+		img {
+			width: 100%;
+		}
 	}
 </style>

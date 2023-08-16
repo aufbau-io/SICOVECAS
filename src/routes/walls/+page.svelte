@@ -46,17 +46,17 @@ section {
 	}
 
 	figure {
-		border-left: solid 1px var(--primary);
+		border-left: solid 1px var(--black);
 	}
 
 	img {
 		object-fit: cover;
 		width: 100vw;
 		height: 400px;
-		background: var(--primary);
+		background: var(--black);
+
 		padding: 1px 0px;
 	}
-
 	p {
 		background: var(--background);
 		color: var(--primary);

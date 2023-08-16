@@ -37,23 +37,29 @@ section {
 
 .main {
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
 		justify-content: center;
 
 		color: var(--primary);
-		background: var(--background);
+
+		/* padding: 20px; */
+		max-width: 800px;
 
 	}
 
 	figure {
-		border-left: solid 1px var(--primary);
+		border-left: solid 1px var(--black);
+		border-right: solid 1px var(--black);
+		background: var(--background);
+		width: 400px;
+		height: 500px;
 	}
 
 	img {
 		object-fit: cover;
 		width: 100%;
 		height: 400px;
-		background: var(--primary);
+		background: var(--black);
 
 		padding: 1px 0px;
 	}
@@ -64,10 +70,12 @@ section {
 	}
 
 	@media only screen and (max-width: 768px) {
-		/* .main {
-			position: absolute;
-			bottom: 20px;
-			width: calc(100% - 40px);
-		} */
+		figure {
+			width: 100%;
+		}
+
+		img {
+			width: 100%;
+		}
 	}
 </style>
