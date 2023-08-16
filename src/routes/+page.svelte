@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
 
 	import { screenType } from '$lib/store/store';
-	import LazyImage from '$lib/components/common/LazyImage.svelte';
+	import LazyImage from '$lib/components/common/lazyImage.svelte';
 
   export let data;
   console.log(data);
