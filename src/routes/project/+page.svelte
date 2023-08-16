@@ -31,21 +31,20 @@ section {
   text-align: center;
 
 	overflow: auto;
-
+	background: var(--background-50);
 
 }
 
 .main {
-	/* max-width: 900px; */
-
 		display: flex;
-		flex-flow: row wrap;
+		flex-flow: row nowrap;
 		justify-content: center;
 		gap: 10px;
 
 		color: var(--primary);
-		background: var(--background-50);
+
 		padding:  20px;
+
 	}
 
 	img {
