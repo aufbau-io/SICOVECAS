@@ -74,8 +74,7 @@ export async function load() {
 
 	const { data } = await response.json();
 
-	let long_text = data.essenceCollection.items[0];
-	parse_spaces(long_text.himText);
+	data.essenceCollection.items[0].himText = parse_spaces(data.essenceCollection.items[0].himText);
 
 	return {
 		essence: data.essenceCollection.items[0],
