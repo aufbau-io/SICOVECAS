@@ -46,8 +46,6 @@
 
 <style>
   img {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
     width: 100%;
     height: auto;
     display: block;
