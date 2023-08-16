@@ -16,7 +16,6 @@
 		padding: 30px 20px;
 		height: calc(2 * var(--margin));
 
-		border-top: solid 1px var(--accent-50);
 		text-transform: none;
 
 

@@ -31,7 +31,7 @@ section {
   text-align: center;
 
 	overflow: auto;
-	background: var(--background-50);
+	/* background: var(--background-50); */
 
 }
 
@@ -39,11 +39,11 @@ section {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: center;
-		gap: 10px;
 
 		color: var(--primary);
+		background: var(--black);
 
-		padding:  20px;
+		padding-bottom:  10px;
 
 	}
 
@@ -51,6 +51,8 @@ section {
 		object-fit: cover;
 		width: 100%;
 		height: 400px;
+		background: var(--black);
+		padding: 20px 10px;
 	}
 
 	@media only screen and (max-width: 768px) {

@@ -31,7 +31,7 @@ section {
   text-align: center;
 
 	overflow: auto;
-	background: var(--background-50);
+	/* background: var(--background-50); */
 
 }
 
@@ -39,18 +39,28 @@ section {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: center;
-		gap: 10px;
 
 		color: var(--primary);
+		background: var(--primary);
 
-		padding:  20px;
+	}
 
+	figure {
+		border-left: solid 1px var(--accent);
 	}
 
 	img {
 		object-fit: cover;
 		width: 100%;
 		height: 400px;
+		background: var(--primary);
+
+		padding: 20px 10px;
+	}
+
+	p {
+		background: var(--primary);
+		color: var(--black);
 	}
 
 	@media only screen and (max-width: 768px) {
