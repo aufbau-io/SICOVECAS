@@ -86,7 +86,8 @@
 	</header>
 
 	<body>
-		<slot />
+			<slot />
+
 	</body>
 
 	{#if $screenType == 3}

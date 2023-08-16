@@ -1,6 +1,4 @@
 <script>
-	import { screenType } from '$lib/store/store';
-	
 	export let data;
 
 	const returnLineBreaks = (text) => {
@@ -17,7 +15,7 @@
 <section>
 <div class="main">
 	<p class="lineBreakStyle">
-		{#each returnLineBreaks(data.himText) as textPart}
+		{#each returnLineBreaks(data.essence.himText) as textPart}
 			<span>{textPart}</span>
 		{/each}
 	</p>

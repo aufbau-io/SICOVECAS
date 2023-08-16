@@ -15,33 +15,35 @@ const query = `
       himText
     }
   },
-  employeeCollection{
+  projectCollection{
     items{
-      name,
-      jobTitle
-      startDate
-      photo {
-        url(transform: {
-          format: AVIF
-        })
-        description
-      }
+      title,
     }
   }
 }
 `;
 
+let parse_spaces = (str) => {
+	return str.replace(/\n/g, '<br/>');
+};
+
 export async function load() {
 	const response = await contentfulFetch(query);
 
 	if (!response.ok) {
-		throw error(404, {
-			message: response.statusText
-		});
+		throw error(404, { message: response.statusText });
 	}
 
 	const { data } = await response.json();
-	const { items } = data.essenceCollection;
+	// const { essence } = data.essenceCollection;
+	// const { projects } = data.projectsCollection;
 
-	return items[0];
+	data.essenceCollection.items[0].himText = parse_spaces(data.essenceCollection.items[0].himText);
+
+	const out = {
+		essence: data.essenceCollection.items[0],
+		projects: data.projectCollection.items
+	};
+
+	return out;
 }

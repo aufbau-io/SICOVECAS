@@ -1,8 +1,11 @@
 <script>
+  import { onMount } from 'svelte';
+
 	import { screenType } from '$lib/store/store';
 	import LazyImage from '$lib/components/common/LazyImage.svelte';
 
-	export let data;
+  export let data;
+  console.log(data);
 
 	$: isMobileLayout = ($screenType == 1 || window.innerWidth < 768);
 	// $: imgHeight = isMobileLayout ? 'auto' : '389px';
@@ -39,22 +42,22 @@
 	<div class="main">
 		<div class="images">
       <LazyImage
-        src={data.homePhoto.url} 
-        alt={data.name}
+        src={data.essence.homePhoto.url} 
+        alt={data.essence.name}
         width={imgWidth}
 				height={imgHeight}
       />
       {#if !isMobileLayout}
       <LazyImage 
-        src={data.homePhoto.url} 
-        alt={data.name}
+        src={data.essence.homePhoto.url} 
+        alt={data.essence.name}
         width={imgWidth}
         height={imgHeight}
         customStyles="transform: rotate(180deg);"
       />
       {/if}
 		</div>
-		<p>{data.homeSubTitle}</p>
+		<p>{data.essence.homeSubTitle}</p>
 	</div>
 </section>
 
