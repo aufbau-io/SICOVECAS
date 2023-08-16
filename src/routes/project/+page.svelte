@@ -46,16 +46,16 @@ section {
 	}
 
 	figure {
-		border-left: solid 1px var(--accent);
+		border-left: solid 1px var(--background);
 	}
 
 	img {
 		object-fit: cover;
 		width: 100vw;
 		height: 400px;
-		background: var(--primary);
+		background: var(--background);
 
-		padding: 20px 10px;
+		padding: 1px 0px;
 	}
 
 	p {

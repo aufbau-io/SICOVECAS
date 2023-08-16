@@ -41,18 +41,25 @@ section {
 		justify-content: center;
 
 		color: var(--primary);
-		background: var(--black);
+		background: var(--background);
 
-		padding-bottom:  10px;
+	}
 
+	figure {
+		border-left: solid 1px var(--primary);
 	}
 
 	img {
 		object-fit: cover;
 		width: 100vw;
 		height: 400px;
-		background: var(--black);
-		padding: 20px 10px;
+		background: var(--primary);
+		padding: 1px 0px;
+	}
+
+	p {
+		background: var(--background);
+		color: var(--primary);
 	}
 
 	@media only screen and (max-width: 768px) {

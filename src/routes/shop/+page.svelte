@@ -31,7 +31,7 @@ section {
   text-align: center;
 
 	overflow: auto;
-	/* background: var(--background-50); */
+	/* background: var(--accent-50); */
 
 }
 
@@ -41,12 +41,12 @@ section {
 		justify-content: center;
 
 		color: var(--primary);
-		background: var(--primary);
+		background: var(--background);
 
 	}
 
 	figure {
-		border-left: solid 1px var(--accent);
+		border-left: solid 1px var(--primary);
 	}
 
 	img {
@@ -55,12 +55,12 @@ section {
 		height: 400px;
 		background: var(--primary);
 
-		padding: 20px 10px;
+		padding: 1px 0px;
 	}
 
 	p {
-		background: var(--primary);
-		color: var(--black);
+		background: var(--background);
+		color: var(--primary);
 	}
 
 	@media only screen and (max-width: 768px) {
