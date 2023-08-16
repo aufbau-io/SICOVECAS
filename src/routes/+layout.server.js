@@ -14,10 +14,48 @@ const query = `
       }
       himText
     }
-  },
-  projectCollection{
+  }
+  projectCollection {
     items{
-      title,
+      title
+      subTitle
+      location
+      year
+      keyImage {
+        url(transform: {
+          format: AVIF,
+          width: 1440
+        })
+      }
+    }
+  }
+  wallsCollection {
+    items {
+      title
+      body
+      image {
+        url(transform: {
+          format: AVIF,
+          width: 1440
+        })    
+      }
+    }
+  }
+  shopCollection {
+    items {
+      title
+      isSold
+      dimensions
+      medium
+      year
+      imageCollection {
+        items {
+          url(transform: {
+            format: AVIF,
+            width: 1440
+          })
+        }         
+      }
     }
   }
 }
@@ -35,15 +73,14 @@ export async function load() {
 	}
 
 	const { data } = await response.json();
-	// const { essence } = data.essenceCollection;
-	// const { projects } = data.projectsCollection;
 
-	data.essenceCollection.items[0].himText = parse_spaces(data.essenceCollection.items[0].himText);
+	let long_text = data.essenceCollection.items[0];
+	parse_spaces(long_text.himText);
 
-	const out = {
+	return {
 		essence: data.essenceCollection.items[0],
-		projects: data.projectCollection.items
+		projects: data.projectCollection.items,
+		walls: data.wallsCollection.items,
+		shop: data.shopCollection.items
 	};
-
-	return out;
 }

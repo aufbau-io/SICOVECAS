@@ -3,59 +3,60 @@
 </script>
 
 <section>
-<div class="main">
-	<!-- <section class="team">
-		{#each data.employees as employee}
+	<div class="main">
+		{#each data.projects as project}
 			<figure>
-				<img src={employee.photo.url} alt={employee.photo.description} />
+				<img src={project.keyImage.url} alt={project.keyImage.title} />
 				<figcaption>
-					<p><strong>{employee.name}</strong> — {employee.jobTitle}</p>
+					<p><strong>{project.title}</strong> — {project.title}</p>
 					<p>
-						<em>Joined in {employee.startDate} </em>
+						<em>Joined in {project.title} </em>
 					</p>
 				</figcaption>
 			</figure>
 		{/each}
-	</section> -->
-		<p>PROJECT</p>
 	</div>
 </section>
 
 <style>
 section {
-  padding: 0 0;
   height: 100%;
   width: 100%;
 
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   justify-content: center;
 
   align-items: center;
   text-align: center;
-
-  overflow: auto;
+	background: var(--background-50);
+	overflow: auto;
 }
 
 .main {
-		max-width: 800px;
+		/* max-width: 800px; */
 
 		display: flex;
-		flex-flow: column nowrap;
+		flex-flow: row wrap;
 		justify-content: center;
 		gap: 10px;
 
-		background: var(--background);
 		color: var(--primary);
-		border: var(--border);
+		/* border: var(--border); */
 		padding:  20px;
 	}
 
+	img {
+		object-fit: cover;
+		width: 300px;
+		height: 300px;
+	}
+
 	@media only screen and (max-width: 768px) {
-		.main {
+		/* .main {
 			position: absolute;
 			bottom: 20px;
 			width: calc(100% - 40px);
-		}
+		} */
 	}
 </style>
