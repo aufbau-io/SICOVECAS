@@ -8,9 +8,9 @@
 			<figure>
 				<img src={project.keyImage.url} alt={project.keyImage.title} />
 				<figcaption>
-					<p><strong>{project.title}</strong> — {project.title}</p>
+					<p><strong>{project.title}</strong> — {project.year}</p>
 					<p>
-						<em>Joined in {project.title} </em>
+						<em>{project.subTitle} / {project.location}</em>
 					</p>
 				</figcaption>
 			</figure>
