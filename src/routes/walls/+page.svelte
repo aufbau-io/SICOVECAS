@@ -49,7 +49,7 @@ section {
 
 	img {
 		object-fit: cover;
-		width: 100%;
+		width: 100vw;
 		height: 400px;
 		background: var(--black);
 		padding: 20px 10px;
