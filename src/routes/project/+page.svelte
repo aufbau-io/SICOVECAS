@@ -29,12 +29,14 @@ section {
 
   align-items: center;
   text-align: center;
-	background: var(--background-50);
+
 	overflow: auto;
+
+
 }
 
 .main {
-		/* max-width: 800px; */
+	/* max-width: 900px; */
 
 		display: flex;
 		flex-flow: row wrap;
@@ -42,14 +44,14 @@ section {
 		gap: 10px;
 
 		color: var(--primary);
-		/* border: var(--border); */
+		background: var(--background-50);
 		padding:  20px;
 	}
 
 	img {
 		object-fit: cover;
-		width: 300px;
-		height: 300px;
+		width: 400px;
+		height: 400px;
 	}
 
 	@media only screen and (max-width: 768px) {
