@@ -14,33 +14,26 @@
 		const module = await import('$lib/geometry.svelte');
 		Geometry = module.default;
 
-		// ---------------------------------------------------------------------------
-		// SCREEN
-		// ---------------------------------------------------------------------------
-		const ua = navigator.userAgent;
-		if (
-			/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)
-		) {
-			// phone
-			screenType.set(1);
-		} else if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-			// tablet
-			screenType.set(2);
-		} else {
-			//laptop
-			screenType.set(3);
-		}	
+		function getDeviceType() {
+			const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-		if (window.innerWidth < 768) screenType.set(1);
-		// handle resize
-		window.addEventListener('resize', () => {
-			if (window.innerWidth < 768) screenType.set(1);
-			else if (window.innerWidth < 840) screenType.set(2);
-			else screenType.set(3);
-		});
+			if ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0) {
+				// This is a device which supports touch
+				if (width <= 767) {
+					// Mobile
+					return 1;
+				} else {
+					// Tablet
+					return 2;
+				}
+			} else {
+				// This is likely a laptop or desktop
+				return 3;
+			}
+		}
 
-		if (window.location !== window.parent.location) isIframe.set(true);
-		
+		screenType.set(getDeviceType());
+		isIframe.set(window.location !== window.parent.location);
 		
 	});
 </script>
